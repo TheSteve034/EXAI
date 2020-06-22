@@ -1,0 +1,6 @@
+#explanation_text {
+    padding: 5px;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    background-color: #F3F1C7;
+}

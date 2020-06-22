@@ -1,0 +1,29 @@
+#general_Info_container {
+    background-color: #F3F1C7;
+    display: grid;
+    grid-template-columns:33% 33% 33%
+}
+
+#general_Info {
+    display: grid;
+    grid-template-rows: auto auto
+}
+
+#favorite_ingredients {
+    display: grid;
+    grid-template-rows: auto 70%;
+}
+
+#top_recipes {
+    display: grid;
+    grid-template-rows: auto 60%;
+}
+#general_info_list_container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+#user_instructions {
+    margin-top: 10px;
+    background-color: #F3F1C7;
+}

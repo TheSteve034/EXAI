@@ -1,0 +1,67 @@
+#tutorial_recipe {
+    font-size: 48px;
+    text-align: center;
+    background-color: #F3F1C7;
+}
+
+#tutorial_recipe_iTitle {
+    font-size: 16px;
+    padding: 5px;
+    width: 100%;
+    background-color: #F3F1C7;
+}
+
+#tutorial_recipe_ingredients {
+    margin-top: 10px;
+}
+
+#tutorial_recipe_directions{
+    margin-top: 10px;
+}
+
+#tutorial_recipe_iList {
+    background-color: #F3F1C7;
+    width: 100%;
+}
+
+#tutorial_recipe_img {
+    width: 100%;
+}
+
+#EX_recipe {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+#EX_button {
+    padding: 10px;
+}
+
+#tutorial_recipe_explanations {
+    display: grid;
+    grid-template-columns: 30% auto;
+}
+
+#simple_EX {
+    background-color: #F3F1C7;
+    padding: 10px;
+    display: none;
+}
+
+#tech_EX {
+    background-color: #F3F1C7;
+    padding: 10px;
+    display: none;
+}
+
+#visual_EX {
+    padding: 10px;
+    display: none;
+
+}
+
+#tutorial_recipe_direction {
+    margin-top: 10px;
+    background-color: #F3F1C7;
+    padding: 10px;
+}
