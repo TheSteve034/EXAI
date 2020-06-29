@@ -17,34 +17,77 @@ $_SESSION["rcount"] = "1";
 <body class="p-3 mb-2 bg-info text-black">
     <section id="EX_recipe">
         <section id="tutorial_recipe_content" style="width: 75%">
-            <header id="tutorial_recipe">Best Chocolate Chip Cookies</header>
-            <div id="tutorial_recipe_picture">
-                <img id="tutorial_recipe_img" src="Images/tutorialCookie.jpg">
+            <div class="card" style="width: auto;">
+                <img src="Images/tutorialCookie.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Best Chocolate Chip Cookies</h5>
+                    <h6>Description</h6>
+                    <p class="card-text">Crisp edges, chewy middles.</p>
+                    <h6>Nutrition Facts</h6>
+                    <p>Per Serving</p>
+                    <ul>
+                        <li>298 Calories</li>
+                        <li>15.6 g total fat</li>
+                        <li>36 mg cholesterol</li>
+                        <li>166 mg sodium</li>
+                        <li>38.9 g carbohydrates</li>
+                        <li>3.6 g protein</li>
+                    </ul>
+                </div>
             </div>
-            <div id="tutorial_recipe_ingredients">
-                <header id="tutorial_recipe_iTitle">Ingredients:</header>
-                <ul id="tutorial_recipe_iList">
-                    <li>1 cup butter, softened</li>
-                    <li>1 cup white sugar</li>
-                    <li>1 cup packed brown sugar</li>
-                    <li>2 eggs</li>
-                    <li>2 teaspoons vanilla extract</li>
-                    <li>1 teaspoons baking soda</li>
-                    <li>2 teaspoons hot water</li>
-                    <li>1/2 teaspoon salt</li>
-                    <li>3 cups all-purpose flour</li>
-                    <li>2 cups semisweet chocolate chips</li>
-                    <li>1 cup chopped walnuts</li>
-                </ul>
-            </div>
-            <div id="tutorial_recipe_directions">
-                <header id="tutorial_recipe_iTitle">Directions</header>
-                <ul id="tutorial_recipe_iList">
-                    <li>1. Preheat oven to 350 degrees F.</li>
-                    <li>2. Cream together the butter, white sugar, and brown sugar until smooth.</li>
-                    <li>3. Beat in the eggs.</li>
-                    <li>4. Bake for approximately 10 minuets, or until edges are nicely browned.</li>
-                </ul>
+            <div class="accordion" id="accordionExample">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Ingredients
+                            </button>
+                        </h2>
+                    </div>
+
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div id="tutorial_recipe_ingredients">
+                                <header id="tutorial_recipe_iTitle">Ingredients:</header>
+                                <ul id="tutorial_recipe_iList">
+                                    <li>1 cup butter, softened</li>
+                                    <li>1 cup white sugar</li>
+                                    <li>1 cup packed brown sugar</li>
+                                    <li>2 eggs</li>
+                                    <li>2 teaspoons vanilla extract</li>
+                                    <li>1 teaspoons baking soda</li>
+                                    <li>2 teaspoons hot water</li>
+                                    <li>1/2 teaspoon salt</li>
+                                    <li>3 cups all-purpose flour</li>
+                                    <li>2 cups semisweet chocolate chips</li>
+                                    <li>1 cup chopped walnuts</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Directions
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <div id="tutorial_recipe_directions">
+                                <header id="tutorial_recipe_iTitle">Directions</header>
+                                <ul id="tutorial_recipe_iList">
+                                    <li>1. Preheat oven to 350 degrees F.</li>
+                                    <li>2. Cream together the butter, white sugar, and brown sugar until smooth.</li>
+                                    <li>3. Beat in the eggs.</li>
+                                    <li>4. Bake for approximately 10 minuets, or until edges are nicely browned.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="tutorial_recipe_explanations" >
@@ -62,7 +105,7 @@ $_SESSION["rcount"] = "1";
                         <button onclick="toggleVisualEX()" id="EX_button" type="button" class="btn btn-primary">Visual Explanation</button>
                     </span>
                 </div>
-                <div id="tutorial_recipe_direction">
+                <div id="tutorial_recipe_direction" class="card">
                     <p>
                         <b>
                             During the session you will view 25 different recipe recommendations. Each recipe will
@@ -78,20 +121,26 @@ $_SESSION["rcount"] = "1";
                 </div>
             </section>
             <section id="explanations" style="padding: 5px">
-                <div id="simple_EX">
-                  <p>This recipe is recommended to you because it is the highest rated chocolate chip cooke recipe</p>
+                <div id="simple_EX" class="card">
+                    <div class="card-body">
+                        <p>This recipe is recommended to you because it is the highest rated chocolate chip cooke recipe</p>
+                    </div>
                 </div>
-                &nbsp;
-                <div id="tech_EX">
-                    <p>
-                        Users who are similar to you gave this recipe great reviews. The most common positive feature
-                        of this recipe was that the cookies are chewy in the middle and crispy on the edges. These features
-                        were extracted using a sentence level analysis of reviews from users most similar to you.
-                    </p>
+
+                <div id="tech_EX" class="card">
+                    <div class="card-body">
+                        <p>
+                            Users who are similar to you gave this recipe great reviews. The most common positive feature
+                            of this recipe was that the cookies are chewy in the middle and crispy on the edges. These features
+                            were extracted using a sentence level analysis of reviews from users most similar to you.
+                        </p>
+                    </div>
                 </div>
-                &nbsp;
-                <div id="visual_EX">
-                    <img src="Images/CropedWordCloud.jpg">
+
+                <div id="visual_EX" class="card" style="width: 100%">
+                    <img class="card-img-top" src="Images/CropedWordCloud.jpg" alt="image missing">
+                    <div class="card-body">
+                    </div>
                 </div>
             </section>
         </section>

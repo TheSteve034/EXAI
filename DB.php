@@ -1,15 +1,14 @@
 <?php
 session_start();
-echo session_id() . "<br>";
 $servername = "localhost";
 $username = "root";
 $password = "Hulk22Lion908";
+$done = false;
 
 try {
     $conn = new PDO("mysql:host=$servername;dbname=test", $username, $password);
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully";
     //gather needed DB data
     $seshID = session_id();
     $rId = $_SESSION["rcount"];
@@ -35,17 +34,23 @@ try {
     //execute query
     $SQL->execute();
 
-    echo "<br>" . "New record created!" . "<br>";
-
+    $done = true;
 } catch(PDOException $e) {
     echo "Error: " . $e->getMessage();
 }
+if ($done)
+{
+    header("Location: last_tutorial.php");
+    exit;
+}
 
-if($_POST["question1"]) {
-    echo "<br>";
+
+/*if($_POST["question1"]) {
+    //echo "<br>";
     $q1Res = $_POST["question1"];
     $lastRec = $_SESSION["rcount"];
-    echo "Question 1 from last page was: " . $q1Res . "<br>";
-    echo "last Recommendation was " . $lastRec;
-}
+    //echo "Question 1 from last page was: " . $q1Res . "<br>";
+    //echo "last Recommendation was " . $lastRec;
+
+}*/
 
