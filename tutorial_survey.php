@@ -63,7 +63,6 @@ function sanatize_in($data) {
 ?>
 <h1>Example Survey</h1>
 <section id="form_container">
-    <!-- TODO: this action needs to be converted to a DB call -->
     <form method="post" action="last_tutorial.php"  class="form-horizontal">
         <fieldset>
 
