@@ -1,6 +1,5 @@
 <?php
     session_start();
-echo session_id() . "<br>";
 //unset($_SESSION);
 //if (ini_get("session.use_cookies")) {
    // $params = session_get_cookie_params();
@@ -22,7 +21,7 @@ echo session_id() . "<br>";
     <link rel="stylesheet" href="css/mainPage.css">
     <title> Introduction and Instruction</title>
 </head>
-<body class="p-3 mb-2 bg-info text-black">
+<body class="p-3 mb-2 bg-light text-black">
 <h1> Introduction and Instruction</h1>
 <div id="intro_text" class="container-fluid">
     <p>Welcome to this recommendation engine validation session. Thank you for your participation.

@@ -10,6 +10,7 @@ try {
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     //gather needed DB data
+    echo "connected <br>";
     $seshID = session_id();
     $rId = $_SESSION["rcount"];
     $q1 = $_POST["question1"];
@@ -18,6 +19,7 @@ try {
     $q4 = $_POST["question4"];
     $q5 = $_POST["question5"];
     $q6 = $_POST["question6"];
+    $nextPage = $_SESSION["NextR"];
 
     //prepare SQL statement
     $SQL = $conn->prepare("INSERT INTO survey_answers (session_ID, recipe_ID, q1, q2, q3, q4, q5, q6)
@@ -35,22 +37,25 @@ try {
     $SQL->execute();
 
     $done = true;
+    //echo "record added <br>";
 } catch(PDOException $e) {
     echo "Error: " . $e->getMessage();
 }
 if ($done)
 {
-    header("Location: last_tutorial.php");
+
+    //echo $nextPage;
+    header($nextPage);
     exit;
 }
 
 
 /*if($_POST["question1"]) {
-    //echo "<br>";
+    echo "<br>";
     $q1Res = $_POST["question1"];
     $lastRec = $_SESSION["rcount"];
-    //echo "Question 1 from last page was: " . $q1Res . "<br>";
-    //echo "last Recommendation was " . $lastRec;
+    echo "Question 1 from last page was: " . $q1Res . "<br>";
+    echo "last Recommendation was " . $lastRec;
 
 }*/
 

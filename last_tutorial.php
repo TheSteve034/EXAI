@@ -8,13 +8,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>End of Tutorial</title>
 </head>
-<body class="p-3 mb-2 bg-info text-white">
-<h1>Hello, world!</h1>
-<div class="container-fluid">
-    <p>This is In a DIV</p>
+<body class="p-3 mb-2 bg-light text-black">
+<div id="explanation_text">
+    <p>
+       You are now ready to complete your session. Remember that if at any time you have questions please call Samuel
+        Reeder at the following number<br>801-390-1898
+    </p>
+    <p>Press continue to get started.</p>
 </div>
+<a href="sessionEX_1.php" target="_top" style="margin-top: 10px">
+    <button type="button" class="btn btn-primary">Continue</button>
+</a>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->

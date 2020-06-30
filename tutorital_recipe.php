@@ -14,7 +14,7 @@ $_SESSION["rcount"] = "1";
     <link rel="stylesheet" href="css/recipeEX.css">
     <title>Example Recipe</title>
 </head>
-<body class="p-3 mb-2 bg-info text-black">
+<body class="p-3 mb-2 bg-light text-black">
     <section id="EX_recipe">
         <section id="tutorial_recipe_content" style="width: 75%">
             <div class="card" style="width: auto;">

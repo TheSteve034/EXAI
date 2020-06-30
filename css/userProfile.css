@@ -1,5 +1,4 @@
 #general_Info_container {
-    background-color: #F3F1C7;
     display: grid;
     grid-template-columns:33% 33% 33%
 }
@@ -25,5 +24,4 @@
 
 #user_instructions {
     margin-top: 10px;
-    background-color: #F3F1C7;
 }

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/userProfile.css">
     <title>Steve's Profile</title>
 </head>
-<body class="p-3 mb-2 bg-info text-black" >
+<body class="p-3 mb-2 bg-light text-black" >
 <h1>Steve's User Profile</h1>
 <section id="general_Info_container">
     <div id="general_Info">

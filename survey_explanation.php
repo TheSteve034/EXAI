@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/surveyExplanation.css"
 
 </head>
-<body class="p-3 mb-2 bg-info text-black">
+<body class="p-3 mb-2 bg-light text-black">
 <div id="explanation_text">
     <p>
         After Each recommendation you will be asked to answer 6 questions. 4 of these questions will ask you to rate
