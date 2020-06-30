@@ -1,7 +1,7 @@
 <?php
 session_start();
 $_SESSION["rcount"] = "2";
-$_SESSION["NextR"] = "sessionEX_3.php";
+$_SESSION["NextR"] = "Location: sessionEX_3.php";
 ?>
 <!doctype html>
 <html lang="en">
@@ -19,20 +19,21 @@ $_SESSION["NextR"] = "sessionEX_3.php";
 <section id="EX_recipe">
     <section id="tutorial_recipe_content" style="width: 75%">
         <div class="card" style="width: auto;">
-            <img src="Images/r1foodimage.jpg" class="card-img-top" alt="...">
+            <img src="Images/r2foodimage.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Best Chocolate Chip Cookies</h5>
+                <h5 class="card-title">Photos of Oatmeal Peanut Butter Cookies III</h5>
                 <h6>Description</h6>
-                <p class="card-text">This is a dynamite chocolate chip dough that has never failed me.</p>
+                <p class="card-text">These are so close to the Girl Scout oatmeal peanut butter cookies that you won't
+                    know the difference!</p>
                 <h6>Nutrition Facts</h6>
                 <p>Per Serving</p>
                 <ul>
-                    <li>298 Calories</li>
-                    <li>15.6 g total fat</li>
-                    <li>36 mg cholesterol</li>
-                    <li>166 mg sodium</li>
-                    <li>38.9 g carbohydrates</li>
-                    <li>3.6 g protein</li>
+                    <li>397 Calories</li>
+                    <li>23.5 g total fat</li>
+                    <li>48 mg cholesterol</li>
+                    <li>343 mg sodium</li>
+                    <li>42.2 g carbohydrates</li>
+                    <li>7.8 g protein</li>
                 </ul>
             </div>
         </div>
@@ -51,17 +52,21 @@ $_SESSION["NextR"] = "sessionEX_3.php";
                         <div id="tutorial_recipe_ingredients">
                             <header id="tutorial_recipe_iTitle">Ingredients:</header>
                             <ul id="tutorial_recipe_iList">
-                                <li>¾ cup white sugar</li>
-                                <li>¾ cup packed brown sugar</li>
-                                <li>2 eggs</li>
-                                <li>2 eggs</li>
+                                <li>¾ cup all-purpose flour</li>
+                                <li>½ teaspoon baking soda</li>
+                                <li>2¼ teaspoon baking powder</li>
+                                <li>½ teaspoon salt</li>
+                                <li>½ cup butter, softened</li>
+                                <li>½ cup peanut butter</li>
+                                <li>½ cup white sugar</li>
+                                <li>½ cup packed light brown sugar</li>
+                                <li>1 egg</li>
                                 <li>1 teaspoon vanilla extract</li>
-                                <li>1 cup butter</li>
-                                <li>2 ½ cups all-purpose flour</li>
-                                <li>1 teaspoon salt</li>
-                                <li>1 teaspoon baking soda</li>
-                                <li>½ teaspoon baking powder</li>
-                                <li>2 cups semisweet chocolate chips</li>
+                                <li>1 cup quick cooking oats</li>
+                                <li>3 tablespoons butter, softened</li>
+                                <li>1 cup confectioners' sugar</li>
+                                <li>½ cup smooth peanut butter</li>
+                                <li>2 ½ tablespoons heavy whipping cream</li>
                             </ul>
                         </div>
                     </div>
@@ -80,14 +85,18 @@ $_SESSION["NextR"] = "sessionEX_3.php";
                         <div id="tutorial_recipe_directions">
                             <header id="tutorial_recipe_iTitle">Directions</header>
                             <ul id="tutorial_recipe_iList">
-                                <li>1. Preheat oven to 350 degrees F.</li>
-                                <li>2. In medium bowl, combine flour, salt, baking soda, and baking powder. Stir with
-                                    fork so all ingredients are mixed.</li>
-                                <li>3. In large bowl, combine sugars, and butter. Mix until smooth. Add eggs and vanilla
-                                    and beat until smooth and fluffy.</li>
-                                <li>4. Add 1 cup of dry ingredients at a time to mixture until all is incorporated.
-                                    Stir in chocolate chips. Drop cookies onto ungreased cookie sheet and bake for about
-                                    10-15 minutes or until edges are golden brown.</li>
+                                <li>1. In a large bowl, cream together 1/2 cup butter or margarine, 1/2 cup peanut
+                                    butter, white sugar, brown sugar, and vanilla. Add egg and beat well.</li>
+                                <li>2. In another bowl, combine the flour, baking soda, baking powder, and salt.
+                                    Add these dry ingredients to the creamed mixture. Stir. Add oatmeal and stir.</li>
+                                <li>3. Drop by teaspoons onto greased baking sheet, and press each mound down with a
+                                    fork to form 1/4 inch thick cookies. Bake at 350 degrees F (175 degrees C) for 10
+                                    minutes, or until cookies are a light brown.
+                                </li>
+                                <li>4. To Make Filling: Cream 3 tablespoons butter or margarine with the confectioners'
+                                    sugar, 1/2 cup smooth peanut butter, and the cream. Spread filling onto half of the
+                                    cooled cookies, then top with the other half to form sandwiches.
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -109,6 +118,13 @@ $_SESSION["NextR"] = "sessionEX_3.php";
                 <span class="border">
                         <button onclick="toggleVisualEX()" id="EX_button" type="button" class="btn btn-primary">Visual Explanation</button>
                     </span>
+                <br>
+                <span class="border">
+                    <a href="user_profile.php" target="_top" style="margin-top: 10px">
+                        <button type="button" class="btn btn-primary">View User Profile</button>
+                    </a>
+                </span>
+                <br>
                 <span class="border">
                     <a href="session_survey.php" target="_top" style="margin-top: 10px">
                         <button type="button" class="btn btn-primary">Continue</button>
@@ -119,22 +135,23 @@ $_SESSION["NextR"] = "sessionEX_3.php";
         <section id="explanations" style="padding: 5px">
             <div id="simple_EX" class="card">
                 <div class="card-body">
-                    <p>This recipe is recommended to you because it is the highest rated chocolate chip cooke recipe</p>
+                    <p>This recipe is recommended to you because it contains peanut butter, which is one of your favorite
+                        ingredients.</p>
                 </div>
             </div>
 
             <div id="tech_EX" class="card">
                 <div class="card-body">
                     <p>
-                        Users who are similar to you gave this recipe great reviews. The most common positive feature
-                        of this recipe was that the cookies are chewy in the middle and crispy on the edges. These features
+                        Users who are similar to you gave this recipe an average star ratting of 4.9. The most common
+                        positive feature of this recipe is that the cookies we soft with a rich taste. These features
                         were extracted using a sentence level analysis of reviews from users most similar to you.
                     </p>
                 </div>
             </div>
 
             <div id="visual_EX" class="card" style="width: 100%">
-                <img class="card-img-top" src="Images/r1Cropped.jpg" alt="image missing">
+                <img class="card-img-top" src="Images/r2Cropped.jpg" alt="image missing">
                 <div class="card-body">
                 </div>
             </div>

@@ -10,7 +10,7 @@ try {
     // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     //gather needed DB data
-    echo "connected <br>";
+    //echo "connected <br>";
     $seshID = session_id();
     $rId = $_SESSION["rcount"];
     $q1 = $_POST["question1"];
