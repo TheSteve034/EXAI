@@ -138,7 +138,7 @@ $_SESSION["rcount"] = "1";
                 </div>
 
                 <div id="visual_EX" class="card" style="width: 100%">
-                    <img class="card-img-top" src="Images/CropedWordCloud.jpg" alt="image missing">
+                    <img class="card-img-top" src="Images/wordclouds/CropedWordCloud.jpg" alt="image missing">
                     <div class="card-body">
                     </div>
                 </div>

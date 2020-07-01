@@ -1,7 +1,7 @@
 <?php
 session_start();
-$_SESSION["rcount"] = "1";
-$_SESSION["NextR"] = "Location: sessionEX_2.php";
+$_SESSION["rcount"] = "5";
+$_SESSION["NextR"] = "Location: sessionEX_6.php";
 ?>
 <!doctype html>
 <html lang="en">
@@ -13,26 +13,27 @@ $_SESSION["NextR"] = "Location: sessionEX_2.php";
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/recipeEX.css">
-    <title>Recommendation 1</title>
+    <title>Recommendation 5</title>
 </head>
 <body class="p-3 mb-2 bg-light text-black">
 <section id="EX_recipe">
     <section id="tutorial_recipe_content" style="width: 75%">
         <div class="card" style="width: auto;">
-            <img src="Images/food_images/r1foodimage.jpg" class="card-img-top" alt="...">
+            <img src="Images/food_images/r5foodimage.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Best Chocolate Chip Cookies</h5>
+                <h5 class="card-title">Caramel Filled Chocolate Cookies</h5>
                 <h6>Description</h6>
-                <p class="card-text">This is a dynamite chocolate chip dough that has never failed me.</p>
+                <p class="card-text">Chocolate cookie dough is wrapped around caramel filled chocolate candies. We have
+                    these at Christmas time each year. They are delicious! Hope you enjoy them too.
+                </p>
                 <h6>Nutrition Facts</h6>
                 <p>Per Serving</p>
                 <ul>
-                    <li>298 Calories</li>
-                    <li>15.6 g total fat</li>
-                    <li>36 mg cholesterol</li>
-                    <li>166 mg sodium</li>
-                    <li>38.9 g carbohydrates</li>
-                    <li>3.6 g protein</li>
+                    <li>253 Calories</li>
+                    <li>36.6 mg cholesterol</li>
+                    <li>127.5 mg sodium</li>
+                    <li>33.1 g carbohydrates</li>
+                    <li>3.4 g protein</li>
                 </ul>
             </div>
         </div>
@@ -51,17 +52,17 @@ $_SESSION["NextR"] = "Location: sessionEX_2.php";
                         <div id="tutorial_recipe_ingredients">
                             <header id="tutorial_recipe_iTitle">Ingredients:</header>
                             <ul id="tutorial_recipe_iList">
-                                <li>¾ cup white sugar</li>
-                                <li>¾ cup packed brown sugar</li>
+                                <li>1 cup butter, softened</li>
+                                <li>1 cup white sugar</li>
+                                <li>1 cup packed brown sugar</li>
                                 <li>2 eggs</li>
-                                <li>2 eggs</li>
-                                <li>1 teaspoon vanilla extract</li>
-                                <li>1 cup butter</li>
-                                <li>2 ½ cups all-purpose flour</li>
-                                <li>1 teaspoon salt</li>
+                                <li>2 teaspoons vanilla extract</li>
+                                <li>2 ¼ cups all-purpose flour</li>
                                 <li>1 teaspoon baking soda</li>
-                                <li>½ teaspoon baking powder</li>
-                                <li>2 cups semisweet chocolate chips</li>
+                                <li>¾ cup unsweetened cocoa powder</li>
+                                <li>1 cup chopped walnuts</li>
+                                <li>1 tablespoon white sugar</li>
+                                <li>48 chocolate-covered caramel candies</li>
                             </ul>
                         </div>
                     </div>
@@ -80,14 +81,25 @@ $_SESSION["NextR"] = "Location: sessionEX_2.php";
                         <div id="tutorial_recipe_directions">
                             <header id="tutorial_recipe_iTitle">Directions</header>
                             <ul id="tutorial_recipe_iList">
-                                <li>1. Preheat oven to 350 degrees F.</li>
-                                <li>2. In medium bowl, combine flour, salt, baking soda, and baking powder. Stir with
-                                    fork so all ingredients are mixed.</li>
-                                <li>3. In large bowl, combine sugars, and butter. Mix until smooth. Add eggs and vanilla
-                                    and beat until smooth and fluffy.</li>
-                                <li>4. Add 1 cup of dry ingredients at a time to mixture until all is incorporated.
-                                    Stir in chocolate chips. Drop cookies onto ungreased cookie sheet and bake for about
-                                    10-15 minutes or until edges are golden brown.</li>
+                                <li>1. Beat butter until creamy. Gradually beat in white sugar and brown sugar. Beat in
+                                    eggs and vanilla. Combine flour, baking soda, and cocoa. Gradually add to butter
+                                    mixture, beating well. Stir in 1/2 cup walnuts. Cover and chill at least 2 hours.
+                                </li>
+                                <li>
+                                    2. Preheat oven to 375 degrees F (190 degrees C).
+                                </li>
+                                <li>
+                                    3. Combine remaining 1/2 cup nuts with the 1 tablespoon sugar. Divide the dough into
+                                    4 parts. Work with one part at a time, leaving the remainder in the refrigerator
+                                    until needed. Divide each part into 12 pieces. Quickly press each piece of dough
+                                    around a chocolate covered caramel. Roll into a ball. Dip the tops into the sugar
+                                    mixture. Place sugar side up, 2 inches apart on greased baking sheets.
+                                </li>
+                                <li>
+                                    4. Bake for 8 minutes in the preheated oven. Let cool for 3 to 4 minutes on the
+                                    baking sheets before removing to wire racks to cool completely.
+                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -126,22 +138,22 @@ $_SESSION["NextR"] = "Location: sessionEX_2.php";
         <section id="explanations" style="padding: 5px">
             <div id="simple_EX" class="card">
                 <div class="card-body">
-                    <p>This recipe is recommended to you because it is the highest rated chocolate chip cooke recipe</p>
+                    <p>This recipe is recommended to you because it is one of the highest rated cookies containing chocolate.</p>
                 </div>
             </div>
 
             <div id="tech_EX" class="card">
                 <div class="card-body">
                     <p>
-                        Users who are similar to you gave this recipe great reviews. The most common positive feature
-                        of this recipe was that the cookies are chewy in the middle and crispy on the edges. These features
-                        were extracted using a sentence level analysis of reviews from users most similar to you.
+                        Users who are similar to you gave this recipe an average star ratting of 4.9. The most common
+                        positive feature of this recipe was the carmel center of the cookie. This
+                        feature was extracted using a sentence level analysis of reviews from users most similar to you.
                     </p>
                 </div>
             </div>
 
             <div id="visual_EX" class="card" style="width: 100%">
-                <img class="card-img-top" src="Images/wordclouds/r1Cropped.jpg" alt="image missing">
+                <img class="card-img-top" src="Images/wordclouds/r5Cropped.jpg" alt="image missing">
                 <div class="card-body">
                 </div>
             </div>

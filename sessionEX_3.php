@@ -19,7 +19,7 @@ $_SESSION["NextR"] = "Location: sessionEX_4.php";
 <section id="EX_recipe">
     <section id="tutorial_recipe_content" style="width: 75%">
         <div class="card" style="width: auto;">
-            <img src="Images/r3foodimage.jpg" class="card-img-top" alt="...">
+            <img src="Images/food_images/r3foodimage.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Chocolate Mint Candies Cookies</h5>
                 <h6>Description</h6>
@@ -149,7 +149,7 @@ $_SESSION["NextR"] = "Location: sessionEX_4.php";
             </div>
 
             <div id="visual_EX" class="card" style="width: 100%">
-                <img class="card-img-top" src="Images/r3Cropped.jpg" alt="image missing">
+                <img class="card-img-top" src="Images/wordclouds/r3Cropped.jpg" alt="image missing">
                 <div class="card-body">
                 </div>
             </div>
