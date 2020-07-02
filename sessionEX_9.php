@@ -1,7 +1,7 @@
 <?php
 session_start();
-$_SESSION["rcount"] = "8";
-$_SESSION["NextR"] = "Location: sessionEX_9.php";
+$_SESSION["rcount"] = "9";
+$_SESSION["NextR"] = "Location: sessionEX_10.php";
 ?>
 <!doctype html>
 <html lang="en">
@@ -13,7 +13,7 @@ $_SESSION["NextR"] = "Location: sessionEX_9.php";
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/recipeEX.css">
-    <title>Recommendation 8</title>
+    <title>Recommendation 9</title>
 </head>
 <body class="p-3 mb-2 bg-light text-black">
 <section id="EX_recipe">
@@ -21,20 +21,19 @@ $_SESSION["NextR"] = "Location: sessionEX_9.php";
         <div class="card" style="width: auto;">
             <img src="Images/food_images/r8foodimage.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Half and Halfs</h5>
+                <h5 class="card-title">Peanut Butter Chip Chocolate Cookies</h5>
                 <h6>Description</h6>
-                <p class="card-text">I came up with this recipe when I couldn't decide whether I wanted chocolate chip
-                    or double chip cookies so I came up with a way to have both! These cookies are half plain chocolate
-                    chip and half chocolate chocolate chip.
+                <p class="card-text">My best friend's mom made these when we were kids. They are the best cookies I have
+                    ever eaten, and I have yet to screw up a batch! Warning: you may be tempted to eat the entire recipe!!
                 </p>
                 <h6>Nutrition Facts</h6>
                 <p>Per Serving</p>
                 <ul>
-                    <li>178.6 Calories</li>
-                    <li>26.8 mg cholesterol</li>
-                    <li>66.9 mg sodium</li>
-                    <li>24 g carbohydrates</li>
-                    <li>2.3 g protein</li>
+                    <li>559.8 Calories</li>
+                    <li>71.7 mg cholesterol</li>
+                    <li>396.8 mg sodium</li>
+                    <li>63.5 g carbohydrates</li>
+                    <li>12.8 g protein</li>
                 </ul>
             </div>
         </div>
