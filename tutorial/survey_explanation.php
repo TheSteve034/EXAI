@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- custom CSS -->
-    <link rel="stylesheet" href="css/surveyExplanation.css"
+    <link rel="stylesheet" href="../css/surveyExplanation.css"
 
 </head>
 <body class="p-3 mb-2 bg-light text-black">

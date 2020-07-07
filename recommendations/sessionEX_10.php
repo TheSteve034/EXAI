@@ -1,7 +1,7 @@
 <?php
 session_start();
-$_SESSION["rcount"] = "3";
-$_SESSION["NextR"] = "Location: sessionEX_4.php";
+$_SESSION["rcount"] = "10";
+$_SESSION["NextR"] = "Location: recommendations/sessionEX_11.php";
 ?>
 <!doctype html>
 <html lang="en">
@@ -12,27 +12,27 @@ $_SESSION["NextR"] = "Location: sessionEX_4.php";
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/recipeEX.css">
-    <title>Recommendation 3</title>
+    <link rel="stylesheet" href="../css/recipeEX.css">
+    <title>Recommendation 10</title>
 </head>
 <body class="p-3 mb-2 bg-light text-black">
 <section id="EX_recipe">
     <section id="tutorial_recipe_content" style="width: 75%">
         <div class="card" style="width: auto;">
-            <img src="Images/food_images/r3foodimage.jpg" class="card-img-top" alt="...">
+            <img src="../Images/food_images/r10foodimage.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Chocolate Mint Candies Cookies</h5>
+                <h5 class="card-title">Cracked Sugar Cookies</h5>
                 <h6>Description</h6>
-                <p class="card-text">I received this recipe through a cookie exchange years ago, and it has become a
-                    favorite of family and friends.</p>
+                <p class="card-text">This is a nice soft center sugar cookie.
+                </p>
                 <h6>Nutrition Facts</h6>
                 <p>Per Serving</p>
                 <ul>
-                    <li>161.6 Calories</li>
-                    <li>18.5 mg cholesterol</li>
-                    <li>99.1 mg sodium</li>
-                    <li>23.8 g carbohydrates</li>
-                    <li>1.7 g protein</li>
+                    <li>162.8 Calories</li>
+                    <li>45.9 mg cholesterol</li>
+                    <li>108.2 mg sodium</li>
+                    <li>20.5 g carbohydrates</li>
+                    <li>1.8 g protein</li>
                 </ul>
             </div>
         </div>
@@ -51,15 +51,13 @@ $_SESSION["NextR"] = "Location: sessionEX_4.php";
                         <div id="tutorial_recipe_ingredients">
                             <header id="tutorial_recipe_iTitle">Ingredients:</header>
                             <ul id="tutorial_recipe_iList">
-                                <li>¾ cup butter</li>
-                                <li>1 ½ cups brown sugar</li>
-                                <li>2 tablespoons water</li>
-                                <li>2 cups semisweet chocolate chips</li>
-                                <li>2 eggs</li>
+                                <li>1 ¼ cups cane sugar</li>
+                                <li>1 cup butter</li>
+                                <li>3 egg yolks</li>
+                                <li>1 teaspoon vanilla extract</li>
                                 <li>2 ½ cups all-purpose flour</li>
-                                <li>1 ¼ teaspoons baking soda</li>
-                                <li>½ teaspoon salt</li>
-                                <li>3 (4.5 ounce) packages chocolate covered thin mints</li>
+                                <li>1 teaspoon baking soda</li>
+                                <li>½ teaspoon cream of tartar</li>
                             </ul>
                         </div>
                     </div>
@@ -78,22 +76,18 @@ $_SESSION["NextR"] = "Location: sessionEX_4.php";
                         <div id="tutorial_recipe_directions">
                             <header id="tutorial_recipe_iTitle">Directions</header>
                             <ul id="tutorial_recipe_iList">
-                                <li>1. In a saucepan over medium heat, cook the sugar, butter and water, stirring
-                                    occasionally until melted. Remove from heat, stir in the chocolate chips until
-                                    melted and set aside to cool for 10 minutes.
+                                <li>
+                                    1. Preheat oven to 350 degrees F (180 degrees C). Lightly grease 2 cookie sheets.
                                 </li>
-                                <li>2. Pour the chocolate mixture into a large bowl, and beat in the eggs, one at a time.
-                                    Combine the flour, baking soda and salt, stir into the chocolate mixture. Cover and
-                                    refrigerate dough for at least 1 hour.
+                                <li>
+                                    2. Cream together sugar and butter. Beat in egg yolks and vanilla.
                                 </li>
-                                <li>3. Preheat oven to 350 degrees F (175 degrees C). Grease cookie sheets. Roll cookie
-                                    dough into walnut sized balls and place 2 inches apart onto the prepared cookie sheets.
+                                <li>
+                                    3. Add flour, baking soda, and cream of tartar. Stir.
                                 </li>
-                                <li>4. Bake for 8 to 10 minutes in the preheated oven, be careful not to overbake. When
-                                    cookies come out of the oven, Press one mint wafer into the top of each cookie and
-                                    let sit for 1 minute. When the mint is softened, swirl with the back of a spoon or
-                                    toothpick to make a pattern with the green filling of the mint wafer. For smaller
-                                    cookies, break mints in half.
+                                <li>
+                                    4. Form dough into walnut size balls and place 2 inches apart on cookie sheet.
+                                    Don't flatten. Bake 10 to 11 minutes, until tops are cracked and just turning color.
                                 </li>
                             </ul>
                         </div>
@@ -118,13 +112,13 @@ $_SESSION["NextR"] = "Location: sessionEX_4.php";
                     </span>
                 <br>
                 <span class="border">
-                    <a href="user_profile.php" target="_top" style="margin-top: 10px">
+                    <a href="../user_profile.php" target="_top" style="margin-top: 10px">
                         <button type="button" class="btn btn-primary">View User Profile</button>
                     </a>
                 </span>
                 <br>
                 <span class="border">
-                    <a href="session_survey.php" target="_top" style="margin-top: 10px">
+                    <a href="../session_survey.php" target="_top" style="margin-top: 10px">
                         <button type="button" class="btn btn-primary">Continue</button>
                     </a>
                 </span>
@@ -133,23 +127,24 @@ $_SESSION["NextR"] = "Location: sessionEX_4.php";
         <section id="explanations" style="padding: 5px">
             <div id="simple_EX" class="card">
                 <div class="card-body">
-                    <p>This recipe is recommended to you because it is a highly rated recipe for cookies that includes
-                        chocolate.</p>
+                    <p>
+                        This recipe is recommended to you because it contains cane sugar as an ingredient.
+                    </p>
                 </div>
             </div>
 
             <div id="tech_EX" class="card">
                 <div class="card-body">
                     <p>
-                        Users who are similar to you gave this recipe an average star ratting of 4.5. The most common
-                        positive feature of this recipe was the inclusion of mints with the chocolate flavour. This
-                        feature was extracted using a sentence level analysis of reviews from users most similar to you.
+                        Users who are similar to you gave this recipe an average star ratting of 4.8. The most common
+                        positive feature of this recipe was how soft and chewy the cookies were.
+                        This feature was extracted using a sentence level analysis of reviews from users most similar to you.
                     </p>
                 </div>
             </div>
 
             <div id="visual_EX" class="card" style="width: 100%">
-                <img class="card-img-top" src="Images/wordclouds/r3Cropped.jpg" alt="image missing">
+                <img class="card-img-top" src="../Images/wordclouds/r10Cropped.jpg" alt="image missing">
                 <div class="card-body">
                 </div>
             </div>
@@ -157,7 +152,7 @@ $_SESSION["NextR"] = "Location: sessionEX_4.php";
     </section>
 </section>
 <!-- Optional JavaScript -->
-<script src="scripts/showEx.js"></script>
+<script src="../scripts/showEx.js"></script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

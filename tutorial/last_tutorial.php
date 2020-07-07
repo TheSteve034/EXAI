@@ -18,7 +18,7 @@
     </p>
     <p>Press continue to get started.</p>
 </div>
-<a href="sessionEX_1.php" target="_top" style="margin-top: 10px">
+<a href="../recommendations/sessionEX_1.php" target="_top" style="margin-top: 10px">
     <button type="button" class="btn btn-primary">Continue</button>
 </a>
 

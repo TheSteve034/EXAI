@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- custom CSS -->
-    <link rel="stylesheet" href="css/survey.css">
+    <link rel="stylesheet" href="../css/survey.css">
     <title>Survey Explanation</title>
 </head>
 <body class="p-3 mb-2 bg-light text-black">
@@ -63,7 +63,7 @@ function sanatize_in($data) {
 ?>
 <h1>Example Survey</h1>
 <section id="form_container">
-    <form method="post" action="last_tutorial.php"  class="form-horizontal">
+    <form method="post" action="last_tutorial.php" class="form-horizontal">
         <fieldset>
 
             <!-- Form Name -->
@@ -306,7 +306,7 @@ function sanatize_in($data) {
 </section>
 
 <!-- Optional JavaScript -->
-<script src="scripts/formValidation.js"></script>
+<script src="../scripts/formValidation.js"></script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
