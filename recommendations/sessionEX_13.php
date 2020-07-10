@@ -19,20 +19,21 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_14.php";
 <section id="EX_recipe">
     <section id="tutorial_recipe_content" style="width: 75%">
         <div class="card" style="width: auto;">
-            <img src="../Images/food_images/r12foodimage.jpg" class="card-img-top" alt="...">
+            <img src="../Images/food_images/r13foodimage.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Delicious Raspberry Oatmeal Cookie Bars</h5>
+                <h5 class="card-title">Soft Peanut Butter Cookies</h5>
                 <h6>Description</h6>
-                <p class="card-text">One of my favorite cookie bar recipes.
+                <p class="card-text">Peanut butter cookies that stay soft with a good flavor but not too sweet! You
+                    won't make another recipe after this one!
                 </p>
                 <h6>Nutrition Facts</h6>
                 <p>Per Serving</p>
                 <ul>
-                    <li>292.1 Calories</li>
-                    <li>27.1 mg cholesterol</li>
-                    <li>144.1 mg sodium</li>
-                    <li>47 g carbohydrates</li>
-                    <li>2.7 g protein</li>
+                    <li>269.9 Calories</li>
+                    <li>15.5 mg cholesterol</li>
+                    <li>278.8 mg sodium</li>
+                    <li>33.5 g carbohydrates</li>
+                    <li>5.2 g protein</li>
                 </ul>
             </div>
         </div>
@@ -51,13 +52,15 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_14.php";
                         <div id="tutorial_recipe_ingredients">
                             <header id="tutorial_recipe_iTitle">Ingredients:</header>
                             <ul id="tutorial_recipe_iList">
-                                <li>½ cup packed light brown sugar</li>
-                                <li>1 cup all-purpose flour</li>
-                                <li>¼ teaspoon baking soda</li>
-                                <li>⅛ teaspoon salt</li>
-                                <li>1 cup rolled oats</li>
-                                <li>½ cup butter, softened</li>
-                                <li>¾ cup seedless raspberry jam</li>
+                                <li>½ cup margarine, softened</li>
+                                <li>½ cup peanut butter</li>
+                                <li>½ cup white sugar</li>
+                                <li>½ cup packed brown sugar</li>
+                                <li>1 egg</li>
+                                <li>½ teaspoon vanilla extract</li>
+                                <li>¾ teaspoon baking soda</li>
+                                <li>¼ teaspoon salt</li>
+                                <li>1 ¾ cups all-purpose flour</li>
                             </ul>
                         </div>
                     </div>
@@ -77,19 +80,17 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_14.php";
                             <header id="tutorial_recipe_iTitle">Directions</header>
                             <ul id="tutorial_recipe_iList">
                                 <li>
-                                    1. Preheat oven to 350 degrees F (175 degrees C). Grease one 8 inch square pan, and
-                                    line with greased foil.
+                                    1. Combine margarine, peanut butter, sugars, egg, and vanilla. Blend together very
+                                    well.
                                 </li>
                                 <li>
-                                    2. Combine brown sugar, flour, baking soda, salt, and rolled oats. Rub in the butter
-                                    using your hands or a pastry blender to form a crumbly mixture. Press 2 cups of the
-                                    mixture into the bottom of the prepared pan. Spread the jam to within 1/4 inch of
-                                    the edge. Sprinkle the remaining crumb mixture over the top, and lightly press it
-                                    into the jam.
+                                    2. Add flour, baking soda and salt with mixer. Chill dough 15 minutes in the
+                                    refrigerator. Roll into balls by hand.
                                 </li>
                                 <li>
-                                    3. Bake for 35 to 40 minutes in preheated oven, or until lightly browned. Allow to
-                                    cool before cutting into bars.
+                                    3. Place on sprayed cookie sheet and bake in a preheated 350 degrees F
+                                    (175 degrees C) oven until edges very lightly browning (about 7 to 10 minutes).
+                                    Don't overcook. We store them in a plastic storage containers, and they stay soft!
                                 </li>
                             </ul>
                         </div>
@@ -130,8 +131,8 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_14.php";
             <div id="simple_EX" class="card">
                 <div class="card-body">
                     <p>
-                        This recipe is recommended to you because it is a highly rated oatmeal cookie recipe, this type
-                        of cookies matches one of your favorites.
+                        This recipe is recommended to you because it is a highly cookie that has peanut butter in it, this
+                        matches your favorite ingredients list.
                     </p>
                 </div>
             </div>
@@ -139,15 +140,15 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_14.php";
             <div id="tech_EX" class="card">
                 <div class="card-body">
                     <p>
-                        Users who are similar to you gave this recipe an average star ratting of 4.8. The most common
-                        positive feature of this recipe was how well different types of berry jam could be used.
+                        Users who are similar to you gave this recipe an average star ratting of 4.1. The most common
+                        positive feature of this recipe was how soft and chewy the cookies were.
                         This feature was extracted using a sentence level analysis of reviews from users most similar to you.
                     </p>
                 </div>
             </div>
 
             <div id="visual_EX" class="card" style="width: 100%">
-                <img class="card-img-top" src="../Images/wordclouds/r12Cropped.jpg" alt="image missing">
+                <img class="card-img-top" src="../Images/wordclouds/r13Cropped.jpg" alt="image missing">
                 <div class="card-body">
                 </div>
             </div>

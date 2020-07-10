@@ -13,26 +13,26 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_15.php";
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/recipeEX.css">
-    <title>Recommendation 11</title>
+    <title>Recommendation 14</title>
 </head>
 <body class="p-3 mb-2 bg-light text-black">
 <section id="EX_recipe">
     <section id="tutorial_recipe_content" style="width: 75%">
         <div class="card" style="width: auto;">
-            <img src="../Images/food_images/r12foodimage.jpg" class="card-img-top" alt="...">
+            <img src="../Images/food_images/r14foodimage.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Delicious Raspberry Oatmeal Cookie Bars</h5>
+                <h5 class="card-title">Anna's Chocolate Chip Cookies</h5>
                 <h6>Description</h6>
-                <p class="card-text">One of my favorite cookie bar recipes.
+                <p class="card-text">This is a recipe my friends' mom gave me and I thought the cookies were excellent!
                 </p>
                 <h6>Nutrition Facts</h6>
                 <p>Per Serving</p>
                 <ul>
-                    <li>292.1 Calories</li>
-                    <li>27.1 mg cholesterol</li>
-                    <li>144.1 mg sodium</li>
-                    <li>47 g carbohydrates</li>
-                    <li>2.7 g protein</li>
+                    <li>119.9 Calories</li>
+                    <li>17.9 mg cholesterol</li>
+                    <li>107 mg sodium</li>
+                    <li>16 g carbohydrates</li>
+                    <li>1.3 g protein</li>
                 </ul>
             </div>
         </div>
@@ -51,13 +51,15 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_15.php";
                         <div id="tutorial_recipe_ingredients">
                             <header id="tutorial_recipe_iTitle">Ingredients:</header>
                             <ul id="tutorial_recipe_iList">
-                                <li>½ cup packed light brown sugar</li>
-                                <li>1 cup all-purpose flour</li>
-                                <li>¼ teaspoon baking soda</li>
-                                <li>⅛ teaspoon salt</li>
-                                <li>1 cup rolled oats</li>
-                                <li>½ cup butter, softened</li>
-                                <li>¾ cup seedless raspberry jam</li>
+                                <li>1 cup butter</li>
+                                <li>½ cup white sugar</li>
+                                <li>1 cup packed brown sugar</li>
+                                <li>1 teaspoon vanilla extract</li>
+                                <li>2 eggs</li>
+                                <li>2 ½ cups all-purpose flour</li>
+                                <li>1 teaspoon baking soda</li>
+                                <li>1 teaspoon salt</li>
+                                <li>2 cups semisweet chocolate chips</li>
                             </ul>
                         </div>
                     </div>
@@ -130,7 +132,7 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_15.php";
             <div id="simple_EX" class="card">
                 <div class="card-body">
                     <p>
-                        This recipe is recommended to you because it is a highly rated oatmeal cookie recipe, this type
+                        This recipe is recommended to you because it is a highly rated chocolate chip cookie recipe, this type
                         of cookies matches one of your favorites.
                     </p>
                 </div>
@@ -139,15 +141,15 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_15.php";
             <div id="tech_EX" class="card">
                 <div class="card-body">
                     <p>
-                        Users who are similar to you gave this recipe an average star ratting of 4.8. The most common
-                        positive feature of this recipe was how well different types of berry jam could be used.
+                        Users who are similar to you gave this recipe an average star ratting of 4.1. The most common
+                        positive feature of this recipe was soft the cookies are.
                         This feature was extracted using a sentence level analysis of reviews from users most similar to you.
                     </p>
                 </div>
             </div>
 
             <div id="visual_EX" class="card" style="width: 100%">
-                <img class="card-img-top" src="../Images/wordclouds/r12Cropped.jpg" alt="image missing">
+                <img class="card-img-top" src="../Images/wordclouds/r14Cropped.jpg" alt="image missing">
                 <div class="card-body">
                 </div>
             </div>
