@@ -1,7 +1,7 @@
 <?php
 session_start();
-$_SESSION["rcount"] = "20";
-$_SESSION["NextR"] = "Location: recommendations/sessionEX_21.php";
+$_SESSION["rcount"] = "23";
+$_SESSION["NextR"] = "Location: recommendations/sessionEX_24.php";
 ?>
 <!doctype html>
 <html lang="en">
@@ -13,27 +13,27 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_21.php";
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/recipeEX.css">
-    <title>Recommendation 20</title>
+    <title>Recommendation 23</title>
 </head>
 <body class="p-3 mb-2 bg-light text-black">
 <section id="EX_recipe">
     <section id="tutorial_recipe_content" style="width: 75%">
         <div class="card" style="width: auto;">
-            <img src="../Images/food_images/r20foodimage.jpg" class="card-img-top" alt="...">
+            <img src="../Images/food_images/r22foodimage.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Chocophiles</h5>
+                <h5 class="card-title">Best Whole Wheat Chocolate Chippers</h5>
                 <h6>Description</h6>
-                <p class="card-text">An extremely rich, very chocolate cookie. This recipe doubles easily, freezes well,
-                    and will make you lots of friends. I was voted employee of the month after bringing them to work!
+                <p class="card-text">In search of an all whole wheat cookie recipe, I created this one. My family gives
+                    it rave reviews!
                 </p>
                 <h6>Nutrition Facts</h6>
                 <p>Per Serving</p>
                 <ul>
-                    <li>263.8 Calories</li>
-                    <li>35.8 mg cholesterol</li>
-                    <li>85.3 mg sodium</li>
-                    <li>33.2 g carbohydrates</li>
-                    <li>3.9 g protein</li>
+                    <li>191.1 Calories</li>
+                    <li>28.7 mg cholesterol</li>
+                    <li>91.7 mg sodium</li>
+                    <li>22.4 g carbohydrates</li>
+                    <li>2.4 g protein</li>
                 </ul>
             </div>
         </div>
@@ -52,16 +52,16 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_21.php";
                         <div id="tutorial_recipe_ingredients">
                             <header id="tutorial_recipe_iTitle">Ingredients:</header>
                             <ul id="tutorial_recipe_iList">
-                                <li>½ cup butter, softened</li>
+                                <li>2 cups brown sugar</li>
                                 <li>1 cup white sugar</li>
-                                <li>2 (2 ounce) packages liquid unsweetened baker's chocolate</li>
-                                <li>2 eggs</li>
-                                <li>2 teaspoons vanilla extract</li>
-                                <li>½ teaspoon baking soda</li>
-                                <li>1 ½ cups all-purpose flour</li>
-                                <li>½ cup white chocolate chips</li>
-                                <li>1 ¼ cups semi-sweet chocolate chips</li>
-                                <li>¼ cup milk chocolate chips</li>
+                                <li>2 cups butter, softened</li>
+                                <li>4 eggs</li>
+                                <li>2 tablespoons vanilla extract</li>
+                                <li>1 teaspoon baking soda</li>
+                                <li>½ teaspoon salt</li>
+                                <li>4 ¾ cups whole wheat flour</li>
+                                <li>1 cup ground pecans</li>
+                                <li>4 cups semisweet chocolate chips</li>
                             </ul>
                         </div>
                     </div>
@@ -81,19 +81,20 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_21.php";
                             <header id="tutorial_recipe_iTitle">Directions</header>
                             <ul id="tutorial_recipe_iList">
                                 <li>
-                                    1. Preheat oven to 350 degrees F (175 degrees C). Lightly grease cookie sheet.
+                                    1. Preheat the oven to 350 degrees F (175 degrees C).
                                 </li>
                                 <li>
-                                    2. Cream butter, sugar and pre-melted chocolate. Stir in eggs and vanilla; beat
-                                    until smooth. Sprinkle baking soda over mixture. Slowly blend in the flour. Fold in
-                                    the white chocolate, semi-sweet and milk chocolate chips.
+                                    2. In a large bowl, cream together the brown sugar, white sugar, and butter until
+                                    smooth. Beat in the eggs one at a time, mixing well after each one. Stir in the
+                                    vanilla, salt, and baking soda until well blended, then mix in the ground pecans and
+                                    flour. Stir in the chocolate chips last. Try not to over mix once you add the flour.
                                 </li>
                                 <li>
-                                    3. Drop the dough by tablespoons onto a lightly greased cookie sheet (or parchment
-                                    paper) about 1 inch apart.
+                                    3. Drop spoonfuls of cookie dough onto ungreased baking sheets so they are about 2 inches apart.
                                 </li>
-                                <li>4. Bake 8 to 10 minutes. Be careful not to overbake! Let the cookies cool on the
-                                    cookie sheet for about 10 minutes, then place them on a wire rack to finish cooling.
+                                <li>Bake for 10 to 12 minutes in the preheated oven, until the cookies are just starting
+                                    to brown at the edges. Let cool on the baking sheets for a few minutes before
+                                    removing to cool on wire racks.
                                 </li>
                             </ul>
                         </div>
@@ -134,8 +135,8 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_21.php";
             <div id="simple_EX" class="card">
                 <div class="card-body">
                     <p>
-                        This recipe is recommended to you because it has the highest amount of choclate for a cookie recipe
-                        rated above 4.5.
+                        This recipe is recommended to you because it is a highly rated recipe for chocolate chip cookies.
+                        This matches one of your favorite cookie types.
                     </p>
                 </div>
             </div>
@@ -143,15 +144,16 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_21.php";
             <div id="tech_EX" class="card">
                 <div class="card-body">
                     <p>
-                        Users who are similar to you gave this recipe an average star ratting of 4.6. The most common
-                        positive feature of this recipe was that it had a lot of choclate and is suited to those who love chocolate.
-                        This feature was extracted using a sentence level analysis of reviews from users most similar to you.
+                        Users who are similar to you gave this recipe an average star ratting of 4.7. The most common
+                        positive feature of this recipe was how good the cookie tasted with the inclusion of whole wheat
+                        flour. This feature was extracted using a sentence level analysis of reviews from users most
+                        similar to you.
                     </p>
                 </div>
             </div>
 
             <div id="visual_EX" class="card" style="width: 100%">
-                <img class="card-img-top" src="../Images/wordclouds/r20Cropped.jpg" alt="image missing">
+                <img class="card-img-top" src="../Images/wordclouds/r22Cropped.jpg" alt="image missing">
                 <div class="card-body">
                 </div>
             </div>
