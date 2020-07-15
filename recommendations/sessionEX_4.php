@@ -113,9 +113,9 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_5.php";
                 </span>
                 <br>
                 <span class="border">
-                    <a href="../session_survey.php" target="_top" style="margin-top: 10px">
-                        <button type="button" class="btn btn-primary">Continue</button>
-                    </a>
+                    <!--<a href="../session_survey.php" target="_top" style="margin-top: 10px">-->
+                        <button onclick="submitClicks()" type="button" class="btn btn-primary">Continue</button>
+                    <!--</a>-->
                 </span>
             </div>
         </section>
