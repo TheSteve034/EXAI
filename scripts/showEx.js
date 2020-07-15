@@ -42,3 +42,23 @@ function toggleVisualEX() {
     turnOff(simp);
     turnOff(tech)
 }
+
+function resetClickCounts() {
+    simpClickCount =0;
+    techClickCount =0;
+    visClickCount =0;
+}
+
+function submitClicks() {
+    const data = new FormData();
+
+    data.append("sCount",simpClickCount);
+    data.append("tCount",techClickCount);
+    data.append("vCount",visClickCount);
+
+    const xhr = new XMLHttpRequest();
+    xhr.open("POST","../scripts/submitClicks.php",true);
+    xhr.send(data);
+    resetClickCounts();
+    window.open("../session_survey.php","_self",false);
+}
