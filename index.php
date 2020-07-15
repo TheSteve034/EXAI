@@ -18,7 +18,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- custom CSS -->
-    <link rel="stylesheet" href="../css/mainPage.css">
+    <link rel="stylesheet" href="css/mainPage.css">
     <title> Introduction and Instruction</title>
 </head>
 <body class="p-3 mb-2 bg-light text-black">
@@ -46,7 +46,7 @@
     </p>
 </div>
 
-<a href="tutorial_profile.php" target="_top" >
+<a href="tutorial/tutorial_profile.php" target="_top" >
     <button type="button" class="btn btn-primary">Continue</button>
 </a>
 

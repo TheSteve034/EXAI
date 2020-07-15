@@ -63,7 +63,7 @@ function sanatize_in($data) {
 ?>
 <h1>Example Survey</h1>
 <section id="form_container">
-    <form method="post" action="last_tutorial.php" class="form-horizontal">
+    <form method="post" action="consent.php" class="form-horizontal">
         <fieldset>
 
             <!-- Form Name -->

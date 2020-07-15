@@ -19,7 +19,7 @@ $_SESSION["NextR"] = "Location: final_survey.php";
 <section id="EX_recipe">
     <section id="tutorial_recipe_content" style="width: 75%">
         <div class="card" style="width: auto;">
-            <img src="../Images/food_images/r24foodimage.jpg" class="card-img-top" alt="...">
+            <img src="../Images/food_images/r25foodimage.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Molasses Sugar Cookies</h5>
                 <h6>Description</h6>

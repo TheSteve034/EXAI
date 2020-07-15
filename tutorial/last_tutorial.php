@@ -16,11 +16,55 @@
        You are now ready to complete your session. Remember that if at any time you have questions please call Samuel
         Reeder at the following number<br>801-390-1898
     </p>
-    <p>Press continue to get started.</p>
+    <p>Please answer the question bellow to get started.</p>
 </div>
-<a href="../recommendations/sessionEX_1.php" target="_top" style="margin-top: 10px">
+<form method="post" action="../scripts/submitUser.php" class="form-horizontal">
+    <fieldset>
+
+        <!-- Form Name -->
+        <legend>Participant Information</legend>
+        <p>For this session, please indicate if you fall into the technical or non-technical group.</p>
+        <p>You are in the technical group if you meet at least one of the following criteria:</p>
+        <ul>
+            <li>You hold a Degree in a STEM (Science, Technology, Engineering, or Math) field.</li>
+            <li>You are enrolled in a computer science program at the university level.</li>
+            <li>You are employed in a STEM position</li>
+        </ul>
+        <p>If any of these apply to you, please select the technical option bellow, and hit continue. If not, select the non-technical option.</p>
+
+        <!-- Multiple Radios -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="radios"></label>
+            <div class="col-md-4">
+                <div class="radio">
+                    <label for="radios-0">
+                        <input type="radio" name="userType" id="radios-0" <?php if(isset($userType) && $userType=="1") echo "checked";?> value="1" required>
+                        Technical
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="radios-1">
+                        <input type="radio" name="userType" id="radios-1" <?php if(isset($userType) && $userType=="2") echo "checked";?>value="2" required>
+                        Non-Technical
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="singlebutton"></label>
+            <div class="col-md-4">
+                <input id ="user_submit_button" type="submit" name="submit" value="continue">
+            </div>
+        </div>
+
+    </fieldset>
+</form>
+
+<!--<a href="../recommendations/sessionEX_1.php" target="_top" style="margin-top: 10px">
     <button type="button" class="btn btn-primary">Continue</button>
-</a>
+</a>-->
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
