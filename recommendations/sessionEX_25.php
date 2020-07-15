@@ -1,7 +1,7 @@
 <?php
 session_start();
-$_SESSION["rcount"] = "23";
-$_SESSION["NextR"] = "Location: recommendations/sessionEX_24.php";
+$_SESSION["rcount"] = "25";
+$_SESSION["NextR"] = "Location: final_survey.php";
 ?>
 <!doctype html>
 <html lang="en">
@@ -13,26 +13,27 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_24.php";
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/recipeEX.css">
-    <title>Recommendation 23</title>
+    <title>Recommendation 25</title>
 </head>
 <body class="p-3 mb-2 bg-light text-black">
 <section id="EX_recipe">
     <section id="tutorial_recipe_content" style="width: 75%">
         <div class="card" style="width: auto;">
-            <img src="../Images/food_images/r23foodimage.jpg" class="card-img-top" alt="...">
+            <img src="../Images/food_images/r24foodimage.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="card-title">Iced Pumpkin Cookies</h5>
+                <h5 class="card-title">Molasses Sugar Cookies</h5>
                 <h6>Description</h6>
-                <p class="card-text">Wonderful spicy iced pumpkin cookies that both kids and adults love!
+                <p class="card-text">These are a wonderful chewy spice cookie. They are drop cookies that keep very well.
+                    I make them at the beginning of the holiday season and they keep all the way to New Year's!
                 </p>
                 <h6>Nutrition Facts</h6>
                 <p>Per Serving</p>
                 <ul>
-                    <li>121.1 Calories</li>
-                    <li>12.9 mg cholesterol</li>
-                    <li>120.5 mg sodium</li>
-                    <li>22.4 g carbohydrates</li>
-                    <li>1.2 g protein</li>
+                    <li>93.5 Calories</li>
+                    <li>5.2 mg cholesterol</li>
+                    <li>180.1 mg sodium</li>
+                    <li>105.2 g carbohydrates</li>
+                    <li>0.9 g protein</li>
                 </ul>
             </div>
         </div>
@@ -51,22 +52,16 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_24.php";
                         <div id="tutorial_recipe_ingredients">
                             <header id="tutorial_recipe_iTitle">Ingredients:</header>
                             <ul id="tutorial_recipe_iList">
-                                <li>2 ½ cups all-purpose flour</li>
-                                <li>1 teaspoon baking powder</li>
-                                <li>1 teaspoon baking soda</li>
+                                <li>1 ½ cups shortening</li>
+                                <li>2 cups white sugar</li>
+                                <li>½ cup molasses</li>
+                                <li>2 eggs</li>
+                                <li>4 cups all-purpose flour</li>
+                                <li>4 teaspoons baking soda</li>
                                 <li>2 teaspoons ground cinnamon</li>
-                                <li>½ teaspoon ground nutmeg</li>
-                                <li>½ teaspoon ground cloves</li>
-                                <li>½ teaspoon salt</li>
-                                <li>½ cup butter, softened</li>
-                                <li>1 ½ cups white sugar</li>
-                                <li>1 cup canned pumpkin puree</li>
-                                <li>1 egg</li>
-                                <li>1 teaspoon vanilla extract</li>
-                                <li>2 cups confectioners' sugar</li>
-                                <li>3 tablespoons milk</li>
-                                <li>1 tablespoon melted butter</li>
-                                <li>1 teaspoon vanilla extract</li>
+                                <li>1 teaspoon ground cloves</li>
+                                <li>1 teaspoon ground ginger</li>
+                                <li>1 teaspoon salt</li>
                             </ul>
                         </div>
                     </div>
@@ -86,19 +81,25 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_24.php";
                             <header id="tutorial_recipe_iTitle">Directions</header>
                             <ul id="tutorial_recipe_iList">
                                 <li>
-                                    1. Preheat oven to 350 degrees F (175 degrees C). Combine flour, baking powder,
-                                    baking soda, cinnamon, nutmeg, ground cloves, and salt; set aside.
+                                    1. Melt the shortening in a large pan on the stove, and cool.
                                 </li>
                                 <li>
-                                    2. In a medium bowl, cream together the 1/2 cup of butter and white sugar. Add
-                                    pumpkin, egg, and 1 teaspoon vanilla to butter mixture, and beat until creamy. Mix
-                                    in dry ingredients. Drop on cookie sheet by tablespoonfuls; flatten slightly.
+                                    2. Add sugar, eggs, and molasses, beat well.
                                 </li>
                                 <li>
-                                    3. Bake for 15 to 20 minutes in the preheated oven. Cool cookies, then drizzle glaze with fork.
+                                    3. In a separate bowl, sift dry ingredients together and add to the pan. Mix well and chill 3 hours or overnight.
                                 </li>
-                                <li>4. To Make Glaze: Combine confectioners' sugar, milk, 1 tablespoon melted butter,
-                                    and 1 teaspoon vanilla. Add milk as needed, to achieve drizzling consistency.
+                                <li>
+                                    4. Form into walnut-size balls. Roll in granulated sugar. Place on greased cookie sheet about 2 inches apart.
+                                </li>
+                                <li>
+                                    5. Bake at 375 degrees F (190 degrees C) for 8-10 minutes.
+                                </li>
+                                <li>
+                                    6. Store in an airtight container to keep from getting overly crisp. If they do lose
+                                    their softness, an easy way to restore it is to place one slice of fresh bread in
+                                    the container with the cookies for a couple of hours or overnight and they will be
+                                    soft again!
                                 </li>
                             </ul>
                         </div>
@@ -139,7 +140,7 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_24.php";
             <div id="simple_EX" class="card">
                 <div class="card-body">
                     <p>
-                        This recipe is recommended to you because it is a highly rated recipe for peanut butter flavoured.
+                        This recipe is recommended to you because it is a highly rated sugar cookie recipe.
                         This matches one of your favorite cookie types.
                     </p>
                 </div>
@@ -149,14 +150,14 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_24.php";
                 <div class="card-body">
                     <p>
                         Users who are similar to you gave this recipe an average star ratting of 4.9. The most common
-                        positive feature of this recipe was the icing used with the peanut butter cookie. This feature
+                        positive feature of this recipe was how soft the cookies were. This feature
                         was extracted using a sentence level analysis of reviews from users most similar to you.
                     </p>
                 </div>
             </div>
 
             <div id="visual_EX" class="card" style="width: 100%">
-                <img class="card-img-top" src="../Images/wordclouds/r23Cropped.jpg" alt="image missing">
+                <img class="card-img-top" src="../Images/wordclouds/r25Cropped.jpg" alt="image missing">
                 <div class="card-body">
                 </div>
             </div>

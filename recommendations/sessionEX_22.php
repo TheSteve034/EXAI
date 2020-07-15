@@ -92,7 +92,7 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_23.php";
                                 <li>
                                     3. Drop spoonfuls of cookie dough onto ungreased baking sheets so they are about 2 inches apart.
                                 </li>
-                                <li>Bake for 10 to 12 minutes in the preheated oven, until the cookies are just starting
+                                <li>4. Bake for 10 to 12 minutes in the preheated oven, until the cookies are just starting
                                     to brown at the edges. Let cool on the baking sheets for a few minutes before
                                     removing to cool on wire racks.
                                 </li>
