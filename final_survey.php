@@ -18,43 +18,25 @@ $_SESSION["NextR"] = "Location: final_page.php";
 <body class="p-3 mb-2 bg-light text-black">
 <!-- PHP script for handling the form -->
 <?php
-$q1Err = $q2Err = $q3Err = $q4Err = $q5Err = $q6Err = "";
-$question1 = $question2 = $question3 = $question4 = $question5 = $question5 ="";
+$q1Error = $q2Error = $q3Error ="";
+$q1 = $q2 = $q3 ="";
 if($_SERVER["REQUEST_METHOD"] == "POST") {
-    if(empty($_POST["question1"])) {
-        $q1Err = "response required";
+    if(empty($_POST["question1Text"])) {
+        $q1Error = "response required";
     } else {
-        $question1 = sanatize_in($_POST["question1"]);
+        $q1 = sanatize_in($_POST["question1Text"]);
     }
 
-    if(empty($_POST["question2"])) {
-        $q2Err = "response required";
+    if(empty($_POST["question2Text"])) {
+        $q2Error = "response required";
     } else {
-        $question2 = sanatize_in($_POST["question2"]);
+        $q2 = sanatize_in($_POST["question2Text"]);
     }
 
-    if(empty($_POST["question3"])) {
-        $q3Err = "response required";
+    if(empty($_POST["question3Text"])) {
+        $q3Error = "response required";
     } else {
-        $question3 = sanatize_in($_POST["question3"]);
-    }
-
-    if(empty($_POST["question4"])) {
-        $q4Err = "response required";
-    } else {
-        $question4 = sanatize_in($_POST["question4"]);
-    }
-
-    if(empty($_POST["question5"])) {
-        $q5Err = "response required";
-    } else {
-        $question5 = sanatize_in($_POST["question5"]);
-    }
-
-    if(empty($_POST["question6"])) {
-        $q6Err = "response required";
-    } else {
-        $question6 = sanatize_in($_POST["question6"]);
+        $q3 = sanatize_in($_POST["question3Text"]);
     }
 }
 
@@ -77,7 +59,7 @@ function sanatize_in($data) {
             <div class="form-group">
                 <label class="col-md-4 control-label" for="textarea">Briefly explain which method was the best at increasing your trust in the recommendation software and why</label>
                 <div class="col-md-4">
-                    <textarea class="form-control" id="textarea" name="textarea"></textarea>
+                    <textarea class="form-control"  name="question1Text"><?php echo $q1;?></textarea>
                 </div>
             </div>
 
@@ -85,7 +67,9 @@ function sanatize_in($data) {
             <div class="form-group">
                 <label class="col-md-4 control-label" for="textarea">Were any of the recommendations inconsistent with your expectations based on the user’s profile? If so, explain why.</label>
                 <div class="col-md-4">
-                    <textarea class="form-control" id="textarea" name="textarea"></textarea>
+                    <textarea class="form-control" name="question2Text">
+                        <?php echo $q2;?>
+                    </textarea>
                 </div>
             </div>
 
@@ -93,7 +77,9 @@ function sanatize_in($data) {
             <div class="form-group">
                 <label class="col-md-4 control-label" for="textarea">In as much detail as possible, please explain how the recommendation software produces a recommendation</label>
                 <div class="col-md-4">
-                    <textarea class="form-control" id="textarea" name="textarea"></textarea>
+                    <textarea class="form-control"  name="question3Text">
+                        <?php echo $q3;?>
+                    </textarea>
                 </div>
             </div>
 
@@ -108,7 +94,6 @@ function sanatize_in($data) {
         </fieldset>
     </form>
 </section>
-
 <!-- Optional JavaScript -->
 <script src="scripts/formValidation.js"></script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
