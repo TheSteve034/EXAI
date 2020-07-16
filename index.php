@@ -44,6 +44,10 @@
         If at any point during this session you are confused or have questions, please reach out to Samuel Reeder at the following phone number 801-390-1898.
         <br>Press continue to see the users profile.
     </p>
+    <p>
+        If you would like, you may a view a short video that walks you through the tutorial. It is shown bellow.
+    </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/uMWZ-vLRfNQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 <a href="tutorial/tutorial_profile.php" target="_top" >

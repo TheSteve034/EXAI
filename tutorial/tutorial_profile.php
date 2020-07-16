@@ -18,7 +18,7 @@
     <div id="general_Info">
         <div>
             <h2>General Information</h2>
-            <p>Steve is a regular user of this recommendation system. He loves cookies and use this recommendation system to look for his next favorite cookie recipe.</p>
+            <p>Steve is a regular user of this recommendation system. He loves cookies and uses this recommendation system to look for his next favorite cookie recipe.</p>
             <p>Bellow is a list of Steve's favorite type of cookies.</p>
         </div>
     </div>

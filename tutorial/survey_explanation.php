@@ -35,8 +35,7 @@
         recommendations and explanations.
     </p>
     <p>
-        Once you are ready, press continue below to view the survey questions. You can return to these instructions
-        from any survey page by clicking the view instructions button.
+        Once you are ready, press continue below to view the survey questions.
     </p>
 </div>
 <a href="tutorial_survey.php" target="_top" style="margin-top: 10px">
