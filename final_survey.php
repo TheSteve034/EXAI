@@ -67,9 +67,7 @@ function sanatize_in($data) {
             <div class="form-group">
                 <label class="col-md-4 control-label" for="textarea">Were any of the recommendations inconsistent with your expectations based on the user’s profile? If so, explain why.</label>
                 <div class="col-md-4">
-                    <textarea class="form-control" name="question2Text">
-                        <?php echo $q2;?>
-                    </textarea>
+                    <textarea class="form-control" name="question2Text"><?php echo $q2;?></textarea>
                 </div>
             </div>
 
@@ -77,9 +75,7 @@ function sanatize_in($data) {
             <div class="form-group">
                 <label class="col-md-4 control-label" for="textarea">In as much detail as possible, please explain how the recommendation software produces a recommendation</label>
                 <div class="col-md-4">
-                    <textarea class="form-control"  name="question3Text">
-                        <?php echo $q3;?>
-                    </textarea>
+                    <textarea class="form-control"  name="question3Text"><?php echo $q3;?></textarea>
                 </div>
             </div>
 

@@ -1,9 +1,19 @@
 var simpClickCount =0;
 var techClickCount =0;
 var visClickCount =0;
+var ingredientCLick =0;
+var directionClick =0;
 var simp = "simple_EX";
 var tech = "tech_EX";
 var vis ="visual_EX";
+
+function iClick() {
+    ingredientCLick++;
+}
+
+function dClick() {
+    directionClick++;
+}
 
 function setViability(id) {
     var e = document.getElementById(id);
@@ -47,6 +57,8 @@ function resetClickCounts() {
     simpClickCount =0;
     techClickCount =0;
     visClickCount =0;
+    ingredientCLick =0;
+    directionClick =0;
 }
 
 function submitClicks() {
@@ -55,6 +67,8 @@ function submitClicks() {
     data.append("sCount",simpClickCount);
     data.append("tCount",techClickCount);
     data.append("vCount",visClickCount);
+    data.append("iCount",ingredientCLick);
+    data.append("dCount",directionClick);
 
     const xhr = new XMLHttpRequest();
     xhr.open("POST","../scripts/submitClicks.php",true);
