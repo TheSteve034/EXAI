@@ -10,6 +10,7 @@ $tCount = $_POST["tCount"];
 $vCount = $_POST["vCount"];
 $iCount =$_POST["iCount"];
 $dCount = $_POST["dCount"];
+$time = $_POST["pageTime"];
 $done = false;
 
 try {
@@ -29,6 +30,14 @@ try {
     $SQL->bindParam(':d_clickCount',$dCount);
 
     $SQL->execute();
+
+    $SQL1 = $conn->prepare("INSERT INTO page_time (session_ID, r_ID, time_spent)
+                                     VALUES (:session_ID, :r_ID, :page_time)");
+    $SQL1->bindParam(':session_ID',$seshID);
+    $SQL1->bindParam(':r_ID',$rId);
+    $SQL1->bindParam(':page_time',$time);
+
+    $SQL1->execute();
 
     $done = true;
 } catch(PDOException $e) {

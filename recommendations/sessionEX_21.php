@@ -15,7 +15,7 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_22.php";
     <link rel="stylesheet" href="../css/recipeEX.css">
     <title>Recommendation 21</title>
 </head>
-<body class="p-3 mb-2 bg-light text-black">
+<body onload="startTime()" class="p-3 mb-2 bg-light text-black">
 <section id="EX_recipe">
     <section id="tutorial_recipe_content" style="width: 75%">
         <div class="card" style="width: auto;">
@@ -123,9 +123,9 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_22.php";
                     </span>
                 <br>
                 <span class="border">
-                    <a href="../user_profile.php" target="_top" style="margin-top: 10px">
-                        <button type="button" class="btn btn-primary">View User Profile</button>
-                    </a>
+                    <!--<a href="../user_profile.php" target="_top" style="margin-top: 10px">-->
+                        <button onclick="submitClicksViewUserProfile()" type="button" class="btn btn-primary">View User Profile</button>
+                    <!--</a>-->
                 </span>
                 <br>
                 <span class="border">

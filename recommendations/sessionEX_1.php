@@ -15,7 +15,7 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_2.php";
     <link rel="stylesheet" href="../css/recipeEX.css">
     <title>Recommendation 1</title>
 </head>
-<body class="p-3 mb-2 bg-light text-black">
+<body onload="startTime()" class="p-3 mb-2 bg-light text-black">
 <section id="EX_recipe">
     <section id="tutorial_recipe_content" style="width: 75%">
         <div class="card" style="width: auto;">
@@ -111,9 +111,9 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_2.php";
                     </span>
                 <br>
                 <span class="border">
-                    <a href="../user_profile.php" target="_top" style="margin-top: 10px">
-                        <button type="button" class="btn btn-primary">View User Profile</button>
-                    </a>
+                    <!--<a href="../user_profile.php" target="_top" style="margin-top: 10px">-->
+                        <button onclick="submitClicksViewUserProfile()" type="button" class="btn btn-primary">View User Profile</button>
+                    <!--</a>-->
                 </span>
                 <br>
                 <span class="border">
@@ -150,6 +150,7 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_2.php";
 </section>
 <!-- Optional JavaScript -->
 <script src="../scripts/showEx.js"></script>
+<script src="../scripts/utilities.js"></script>
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
