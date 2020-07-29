@@ -61,233 +61,170 @@ function sanatize_in($data) {
     return $data;
 }
 ?>
-<h1>Session Survey</h1>
 <section id="form_container">
     <form method="post" action="DB.php" class="form-horizontal">
         <fieldset>
 
             <!-- Form Name -->
             <legend>Explanation Survey</legend>
-            <p><span class="error">* required field</span></p>
             <!-- Multiple Radios (inline) -->
+            <hr>
+            <h5>Trust</h5>
+            <hr>
             <div class="form-group">
-                <label class="col-md-4 control-label" for="radios">On a scale of 1-5 where 1 is significantly reduced
-                    your trust and 5 is significantly increased your trust. How did the recommendation affect your trust
+                <label class="col-md-4 control-label" for="radios">How did the recommendation you just saw affect your <b>trust</b>
                     in the recommendation software?</label>
-                <div class="col-md-4">
-                    <label class="radio-inline" for="radios-0">
-                        <input type="radio" name="question1" id="radios-0" <?php if(isset($question1) && $question1=="1") echo "checked";?> value="1" required>
-                        1
+                <div class="col">
+                    significantly reduced &nbsp; &nbsp;<label class="radio-inline" for="radios-01">1 &nbsp; &nbsp; <br />
+                       <input type="radio" name="question1" id="radios-01" <?php if(isset($question1) && $question1=="1") echo "checked";?> value="1" required>
                     </label>
-                    <label class="radio-inline" for="radios-1">
-                        <input type="radio" name="question1" id="radios-1" <?php if(isset($question1) && $question1=="2") echo "checked";?> value="2">
-                        2
+                    <label class="radio-inline" for="radios-11">2 &nbsp; &nbsp; <br />
+                        <input type="radio" name="question1" id="radios-11" <?php if(isset($question1) && $question1=="2") echo "checked";?> value="2">
                     </label>
-                    <label class="radio-inline" for="radios-2">
-                        <input type="radio" name="question1" id="radios-2" <?php if(isset($question1) && $question1=="3") echo "checked";?> value="3">
-                        3
+                    <label class="radio-inline" for="radios-21">3 &nbsp; &nbsp; <br />
+                        <input type="radio" name="question1" id="radios-21" <?php if(isset($question1) && $question1=="3") echo "checked";?> value="3">
                     </label>
-                    <label class="radio-inline" for="radios-3">
-                        <input type="radio" name="question1" id="radios-3" <?php if(isset($question1) && $question1=="4") echo "checked";?> value="4">
-                        4
+                    <label class="radio-inline" for="radios-31">4 &nbsp; &nbsp; <br />
+                        <input type="radio" name="question1" id="radios-31" <?php if(isset($question1) && $question1=="4") echo "checked";?> value="4">
                     </label>
-                    <label class="radio-inline" for="radios-4">
-                        <input type="radio" name="question1" id="radios-4" <?php if(isset($question1) && $question1=="5") echo "checked";?> value="5">
-                        5
-                    </label>
-                    <span class="error">* <?php echo $q1Err;?></span>
+                    <label class="radio-inline" for="radios-41">5 &nbsp; &nbsp; <br />
+                        <input type="radio" name="question1" id="radios-41" <?php if(isset($question1) && $question1=="5") echo "checked";?> value="5">
+                    </label>significantly increased
                 </div>
             </div>
-
+            <hr>
             <!-- Multiple Radios (inline) -->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="radios">On a scale of 1-5 where 1 is reduced your
-                    understanding significantly and 5 is increased your understanding significantly. How did the
-                    explanation of the recommendation affect your understanding of the recommendation software?</label>
-                <div class="col-md-4">
-                    <label class="radio-inline" for="radios-0">
-                        <input type="radio" name="question2" id="radios-0" <?php if(isset($question2) && $question2=="1") echo "checked";?> value="1" required>
-                        1
+                <label class="col-md-4 control-label" for="radios">Based on <b>all</b> the recommendations you have seen
+                    so far how much do you <b>trust</b> the recommendation software currently?</label>
+                <div class="col">
+                    No Trust &nbsp; &nbsp;<label class="radio-inline" for="radios-03">1 &nbsp; &nbsp; <br />
+                        <input type="radio" name="question3" id="radios-03" <?php if(isset($question3) && $question3=="1") echo "checked";?> value="1" required>
                     </label>
-                    <label class="radio-inline" for="radios-1">
-                        <input type="radio" name="question2" id="radios-1" <?php if(isset($question2) && $question2=="2") echo "checked";?> value="2">
-                        2
+                    <label class="radio-inline" for="radios-13">2 &nbsp; &nbsp; <br />
+                        <input type="radio" name="question3" id="radios-13" <?php if(isset($question3) && $question3=="2") echo "checked";?> value="2">
                     </label>
-                    <label class="radio-inline" for="radios-2">
-                        <input type="radio" name="question2" id="radios-2" <?php if(isset($question2) && $question2=="3") echo "checked";?> value="3">
-                        3
+                    <label class="radio-inline" for="radios-23">3 &nbsp; &nbsp; <br />
+                        <input type="radio" name="question3" id="radios-23" <?php if(isset($question3) && $question3=="3") echo "checked";?> value="3">
                     </label>
-                    <label class="radio-inline" for="radios-3">
-                        <input type="radio" name="question2" id="radios-3" <?php if(isset($question2) && $question2=="4") echo "checked";?> value="4">
-                        4
+                    <label class="radio-inline" for="radios-33">4 &nbsp; &nbsp; <br />
+                        <input type="radio" name="question3" id="radios-33" <?php if(isset($question3) && $question3=="4") echo "checked";?> value="4">
                     </label>
-                    <label class="radio-inline" for="radios-4">
-                        <input type="radio" name="question2" id="radios-4" <?php if(isset($question2) && $question2=="5") echo "checked";?> value="5">
-                        5
-                    </label>
-                    <span class="error">* <?php echo $q2Err;?></span>
+                    <label class="radio-inline" for="radios-43">5 &nbsp; &nbsp; <br />
+                        <input type="radio" name="question3" id="radios-43" <?php if(isset($question3) && $question3=="5") echo "checked";?> value="5">
+                    </label> Complete Trust
                 </div>
             </div>
-
+            <hr>
+            <h5>Understanding</h5>
+            <hr>
             <!-- Multiple Radios (inline) -->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="radios">On a scale of 1-10 where 1 indicates no trust and 10
-                    indicates complete trust, in general, how much do you currently trust the recommendation software?</label>
-                <div class="col-md-4">
-                    <label class="radio-inline" for="radios-0">
-                        <input type="radio" name="question3" id="radios-0" <?php if(isset($question3) && $question3=="1") echo "checked";?> value="1" required>
-                        1
+                <label class="col-md-4 control-label" for="radios">How did the explanation of the recommendation affect
+                    your <b>understanding</b> of the recommendation software?</label>
+                <div class="col">
+                    significantly reduced &nbsp; &nbsp;<label class="radio-inline" for="radios-02">1 &nbsp; &nbsp; <br />
+                        <input type="radio" name="question2" id="radios-02" <?php if(isset($question2) && $question2=="1") echo "checked";?> value="1" required>
                     </label>
-                    <label class="radio-inline" for="radios-1">
-                        <input type="radio" name="question3" id="radios-1" <?php if(isset($question3) && $question3=="2") echo "checked";?> value="2">
-                        2
+                    <label class="radio-inline" for="radios-12">2 &nbsp; &nbsp; <br />
+                        <input type="radio" name="question2" id="radios-12" <?php if(isset($question2) && $question2=="2") echo "checked";?> value="2">
                     </label>
-                    <label class="radio-inline" for="radios-2">
-                        <input type="radio" name="question3" id="radios-2" <?php if(isset($question3) && $question3=="3") echo "checked";?> value="3">
-                        3
+                    <label class="radio-inline" for="radios-22">3 &nbsp; &nbsp; <br />
+                        <input type="radio" name="question2" id="radios-22" <?php if(isset($question2) && $question2=="3") echo "checked";?> value="3">
                     </label>
-                    <label class="radio-inline" for="radios-3">
-                        <input type="radio" name="question3" id="radios-3" <?php if(isset($question3) && $question3=="4") echo "checked";?> value="4">
-                        4
+                    <label class="radio-inline" for="radios-32">4 &nbsp; &nbsp; <br />
+                        <input type="radio" name="question2" id="radios-32" <?php if(isset($question2) && $question2=="4") echo "checked";?> value="4">
                     </label>
-                    <label class="radio-inline" for="radios-4">
-                        <input type="radio" name="question3" id="radios-4" <?php if(isset($question3) && $question3=="5") echo "checked";?> value="5">
-                        5
-                    </label>
-                    <label class="radio-inline" for="radios-5">
-                        <input type="radio" name="question3" id="radios-5" <?php if(isset($question3) && $question3=="6") echo "checked";?> value="6">
-                        6
-                    </label>
-                    <label class="radio-inline" for="radios-6">
-                        <input type="radio" name="question3" id="radios-6" <?php if(isset($question3) && $question3=="7") echo "checked";?> value="7">
-                        7
-                    </label>
-                    <label class="radio-inline" for="radios-7">
-                        <input type="radio" name="question3" id="radios-7" <?php if(isset($question3) && $question3=="8") echo "checked";?> value="8">
-                        8
-                    </label>
-                    <label class="radio-inline" for="radios-8">
-                        <input type="radio" name="question3" id="radios-8" <?php if(isset($question3) && $question3=="9") echo "checked";?> value="9">
-                        9
-                    </label>
-                    <label class="radio-inline" for="radios-9">
-                        <input type="radio" name="question3" id="radios-9" <?php if(isset($question3) && $question3=="10") echo "checked";?> value="10">
-                        10
-                    </label>
-                    <span class="error">* <?php echo $q3Err;?></span>
+                    <label class="radio-inline" for="radios-42">5 &nbsp; &nbsp; <br />
+                        <input type="radio" name="question2" id="radios-42" <?php if(isset($question2) && $question2=="5") echo "checked";?> value="5">
+                    </label>significantly increased
                 </div>
             </div>
-
+            <hr>
             <!-- Multiple Radios (inline) -->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="radios">On a scale of 1-10 where 1 indicates no trust and 10
-                    indicates complete trust, in general, how much do you currently trust the recommendation software?</label>
-                <div class="col-md-4">
-                    <label class="radio-inline" for="radios-0">
-                        <input type="radio" name="question4" id="radios-0" <?php if(isset($question4) && $question4=="1") echo "checked";?> value="1" required>
-                        1
+                <label class="col-md-4 control-label" for="radios">Based on <b>all</b> the recommendations you have seen
+                    so far how much do you <b>understand</b> the recommendation software currently?</label>
+                <div class="col">
+                    No Understanding &nbsp; &nbsp;<label class="radio-inline" for="radios-04">1 &nbsp; &nbsp; <br />
+                        <input type="radio" name="question4" id="radios-04" <?php if(isset($question4) && $question4=="1") echo "checked";?> value="1" required>
                     </label>
-                    <label class="radio-inline" for="radios-1">
-                        <input type="radio" name="question4" id="radios-1" <?php if(isset($question4) && $question4=="2") echo "checked";?> value="2">
-                        2
+                    <label class="radio-inline" for="radios-14">2 &nbsp; &nbsp; <br />
+                        <input type="radio" name="question4" id="radios-14" <?php if(isset($question4) && $question4=="2") echo "checked";?> value="2">
                     </label>
-                    <label class="radio-inline" for="radios-2">
-                        <input type="radio" name="question4" id="radios-2" <?php if(isset($question4) && $question4=="3") echo "checked";?> value="3">
-                        3
+                    <label class="radio-inline" for="radios-24">3 &nbsp; &nbsp; <br />
+                        <input type="radio" name="question4" id="radios-24" <?php if(isset($question4) && $question4=="3") echo "checked";?> value="3">
                     </label>
-                    <label class="radio-inline" for="radios-3">
-                        <input type="radio" name="question4" id="radios-3" <?php if(isset($question4) && $question4=="4") echo "checked";?> value="4">
-                        4
+                    <label class="radio-inline" for="radios-34">4 &nbsp; &nbsp; <br />
+                        <input type="radio" name="question4" id="radios-34" <?php if(isset($question4) && $question4=="4") echo "checked";?> value="4">
                     </label>
-                    <label class="radio-inline" for="radios-4">
-                        <input type="radio" name="question4" id="radios-4" <?php if(isset($question4) && $question4=="5") echo "checked";?> value="5">
-                        5
-                    </label>
-                    <label class="radio-inline" for="radios-5">
-                        <input type="radio" name="question4" id="radios-5" <?php if(isset($question4) && $question4=="6") echo "checked";?> value="6">
-                        6
-                    </label>
-                    <label class="radio-inline" for="radios-6">
-                        <input type="radio" name="question4" id="radios-6" <?php if(isset($question4) && $question4=="7") echo "checked";?> value="7">
-                        7
-                    </label>
-                    <label class="radio-inline" for="radios-7">
-                        <input type="radio" name="question4" id="radios-7" <?php if(isset($question4) && $question4=="8") echo "checked";?> value="8">
-                        8
-                    </label>
-                    <label class="radio-inline" for="radios-8">
-                        <input type="radio" name="question4" id="radios-8" <?php if(isset($question4) && $question4=="9") echo "checked";?> value="9">
-                        9
-                    </label>
-                    <label class="radio-inline" for="radios-9">
-                        <input type="radio" name="question4" id="radios-9" <?php if(isset($question4) && $question4=="10") echo "checked";?> value="10">
-                        10
-                    </label>
-                    <span class="error">* <?php echo $q4Err;?></span>
+                    <label class="radio-inline" for="radios-44">5 &nbsp; &nbsp; <br />
+                        <input type="radio" name="question4" id="radios-44" <?php if(isset($question4) && $question4=="5") echo "checked";?> value="5">
+                    </label> Complete Understanding
                 </div>
             </div>
-
         </fieldset>
+        <hr>
+        <h6>The following two questions ask you about which explanation method have affected your trust and understanding the most.</h6>
+        <hr>
         <fieldset>
             <!-- Multiple Radios -->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="radios">Which explanation increases your trust the most?</label>
-                <span class="error">* <?php echo $q5Err;?></span>
+                <label class="col-md-4 control-label" for="radios">Which explanation increases your <b>trust</b> the most?</label>
                 <div class="col-md-4">
                     <div class="radio">
-                        <label for="radios-0">
-                            <input type="radio" name="question5" id="radios-0" <?php if(isset($question5) && $question5=="1") echo "checked";?> value="1" required>
+                        <label for="radios-06">
+                            <input type="radio" name="question5" id="radios-06" <?php if(isset($question5) && $question5=="1") echo "checked";?> value="1" required>
                             Simple Explanation
                         </label>
                     </div>
                     <div class="radio">
-                        <label for="radios-1">
-                            <input type="radio" name="question5" id="radios-1" <?php if(isset($question5) && $question5=="2") echo "checked";?> value="2">
+                        <label for="radios-16">
+                            <input type="radio" name="question5" id="radios-16" <?php if(isset($question5) && $question5=="2") echo "checked";?> value="2">
                             Technical Explanation
                         </label>
                     </div>
                     <div class="radio">
-                        <label for="radios-2">
-                            <input type="radio" name="question5" id="radios-2" <?php if(isset($question5) && $question5=="3") echo "checked";?> value="3">
+                        <label for="radios-26">
+                            <input type="radio" name="question5" id="radios-26" <?php if(isset($question5) && $question5=="3") echo "checked";?> value="3">
                             Visual Explanation
                         </label>
                     </div>
                     <div class="radio">
-                        <label for="radios-3">
-                            <input type="radio" name="question5" id="radios-3" <?php if(isset($question5) && $question5=="4") echo "checked";?> value="4">
+                        <label for="radios-36">
+                            <input type="radio" name="question5" id="radios-36" <?php if(isset($question5) && $question5=="4") echo "checked";?> value="4">
                             None of Them
                         </label>
                     </div>
                 </div>
             </div>
-
+            <hr>
             <!-- Multiple Radios -->
             <div class="form-group">
                 <label class="col-md-4 control-label" for="radios">
-                    Which explanation did you find the most useful when trying to understand the recommendation?</label>
-                <span class="error">* <?php echo $q6Err;?></span>
+                    Which explanation did you find the most useful when trying to <b>understand</b> the recommendation?</label>
                 <div class="col-md-4">
                     <div class="radio">
-                        <label for="radios-0">
-                            <input type="radio" name="question6" id="radios-0" <?php if(isset($question6) && $question6=="1") echo "checked";?> value="1" required>
+                        <label for="radios-07">
+                            <input type="radio" name="question6" id="radios-07" <?php if(isset($question6) && $question6=="1") echo "checked";?> value="1" required>
                             Simple Explanation
                         </label>
                     </div>
                     <div class="radio">
-                        <label for="radios-1">
-                            <input type="radio" name="question6" id="radios-1" <?php if(isset($question6) && $question6=="2") echo "checked";?> value="2">
+                        <label for="radios-17">
+                            <input type="radio" name="question6" id="radios-17" <?php if(isset($question6) && $question6=="2") echo "checked";?> value="2">
                             Technical Explanation
                         </label>
                     </div>
                     <div class="radio">
-                        <label for="radios-2">
-                            <input type="radio" name="question6" id="radios-2" <?php if(isset($question6) && $question6=="3") echo "checked";?> value="3">
+                        <label for="radios-27">
+                            <input type="radio" name="question6" id="radios-27" <?php if(isset($question6) && $question6=="3") echo "checked";?> value="3">
                             Visual Explanation
                         </label>
                     </div>
                     <div class="radio">
-                        <label for="radios-3">
-                            <input type="radio" name="question6" id="radios-3" <?php if(isset($question6) && $question6=="4") echo "checked";?> value="4">
+                        <label for="radios-37">
+                            <input type="radio" name="question6" id="radios-37" <?php if(isset($question6) && $question6=="4") echo "checked";?> value="4">
                             None of Them
                         </label>
                     </div>
@@ -296,7 +233,7 @@ function sanatize_in($data) {
 
             <!-- Button -->
             <div class="form-group">
-                <label class="col-md-4 control-label" for="singlebutton">Submit Survey</label>
+                <label class="col-md-4 control-label" for="singlebutton"></label>
                 <div class="col-md-4">
                     <input id ="tutorial_submit_btn" type="submit" name="submit" value="submit">
                 </div>

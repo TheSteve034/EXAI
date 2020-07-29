@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- custom CSS -->
     <link rel="stylesheet" href="../css/surveyExplanation.css"
-
 </head>
 <body class="p-3 mb-2 bg-light text-black">
 <div id="explanation_text">
+    <h1>Survey Explanation</h1>
+    <h5>Question Summary</h5>
     <p>
         After Each recommendation you will be asked to answer 6 questions. 4 of these questions will ask you to rate
         your trust in and understanding of the recommendation software on a scale. The last 2 will ask you about your
@@ -23,15 +24,14 @@
         in and comprehension of the recommendation software was affected by the most recent recipe. Questions 3 and 4
         will ask you to rate, in general your level of trust in and comprehension of the recommendation software stands.
     </p>
+
+    <h6>Defining Trust and Comprehension</h6>
     <p>
-        Here it is important to know what trust and comprehension means.
-    </p>
-    <p>
-        For the purpose of this session trust indicates at what level you believe the software is providing
+        For the purpose of this session <b>trust</b> indicates at what level you believe the software is providing
         recommendations and explanations that match your understating of Steve’s profile.
     </p>
     <p>
-        Comprehension indicates to what level you feel you understand how the software is producing both the
+        <b>Comprehension</b> indicates to what level you feel you understand how the software is producing both the
         recommendations and explanations.
     </p>
     <p>
