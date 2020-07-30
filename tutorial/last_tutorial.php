@@ -16,7 +16,7 @@
        You are now ready to complete your session. Remember that if at any time you have questions please call Samuel
         Reeder at the following number<br>801-390-1898
     </p>
-    <p>Please answer the question bellow to get started.</p>
+    <p>Before you get started please answer the questions bellow.</p>
 </div>
 <form method="post" action="../scripts/submitUser.php" class="form-horizontal">
     <fieldset>
@@ -51,6 +51,86 @@
             </div>
         </div>
 
+
+        <!-- Multiple Radios -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="userAge">What is Your Age?</label>
+            <div class="col-md-4">
+                <div class="radio">
+                    <label for="radios-0">
+                        <input type="radio" name="userAge" id="userAge-01" <?php if(isset($userAge) && $userAge=="1") echo "checked";?> value="1" required>
+                        18 - 25
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="radios-1">
+                        <input type="radio" name="userAge" id="userAge-11"<?php if(isset($userAge) && $userAge=="2") echo "checked";?> value="2">
+                        26 - 30
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="radios-2">
+                        <input type="radio" name="userAge" id="userAge-21" <?php if(isset($userAge) && $userAge=="3") echo "checked";?> value="3">
+                        31 - 35
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="radios-3">
+                        <input type="radio" name="userAge" id="userAge-31" <?php if(isset($userAge) && $userAge=="4") echo "checked";?> value="4">
+                        36 - 40
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="radios-4">
+                        <input type="radio" name="userAge" id="userAge-41" <?php if(isset($userAge) && $userAge=="5") echo "checked";?>value="5">
+                        41-  45
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="radios-5">
+                        <input type="radio" name="userAge" id="userAge-51" <?php if(isset($userAge) && $userAge=="6") echo "checked";?>value="6">
+                        46 - 50
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="radios-6">
+                        <input type="radio" name="userAge" id="userAge-61" <?php if(isset($userAge) && $userAge=="7") echo "checked";?>value="7">
+                        50 +
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="radios-7">
+                        <input type="radio" name="userAge" id="userAge-71" <?php if(isset($userAge) && $userAge=="8") echo "checked";?>value="8">
+                        Prefer Not to Say
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Multiple Radios -->
+        <div class="form-group">
+            <label class="col-md-4 control-label" for="userGender">What is Your Gender</label>
+            <div class="col-md-4">
+                <div class="radio">
+                    <label for="radios-0">
+                        <input type="radio" name="userGender" id="userGender-02" <?php if(isset($userGender) && $userGender=="1") echo "checked";?> value="1"required>
+                        Female
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="radios-1">
+                        <input type="radio" name="userGender" id="userGender-12" <?php if(isset($userGender) && $userGender=="2") echo "checked";?> value="2">
+                        Male
+                    </label>
+                </div>
+                <div class="radio">
+                    <label for="radios-2">
+                        <input type="radio" name="gender" id="gender-22" <?php if(isset($userGender) && $userGender=="3") echo "checked";?> value="3">
+                        Prefer Not to Say
+                    </label>
+                </div>
+            </div>
+        </div>
         <!-- Button -->
         <div class="form-group">
             <label class="col-md-4 control-label" for="singlebutton"></label>

@@ -96,7 +96,7 @@ function sanatize_in($data) {
             <!-- Multiple Radios (inline) -->
             <div class="form-group">
                 <label class="col-md-4 control-label" for="radios">Based on <b>all</b> the recommendations you have seen
-                    so far how much do you <b>trust</b> the recommendation software currently?</label>
+                    <b>up to this point</b>, how much do you <b>trust</b> the recommendation software currently?</label>
                 <div class="col">
                     No Trust &nbsp; &nbsp;<label class="radio-inline" for="radios-03">1 &nbsp; &nbsp; <br />
                         <input type="radio" name="question3" id="radios-03" <?php if(isset($question3) && $question3=="1") echo "checked";?> value="1" required>
@@ -144,7 +144,7 @@ function sanatize_in($data) {
             <!-- Multiple Radios (inline) -->
             <div class="form-group">
                 <label class="col-md-4 control-label" for="radios">Based on <b>all</b> the recommendations you have seen
-                    so far how much do you <b>understand</b> the recommendation software currently?</label>
+                    <b>up to this point</b>, how much do you <b>understand</b> the recommendation software currently?</label>
                 <div class="col">
                     No Understanding &nbsp; &nbsp;<label class="radio-inline" for="radios-04">1 &nbsp; &nbsp; <br />
                         <input type="radio" name="question4" id="radios-04" <?php if(isset($question4) && $question4=="1") echo "checked";?> value="1" required>
@@ -165,7 +165,7 @@ function sanatize_in($data) {
             </div>
         </fieldset>
         <hr>
-        <h6>The following two questions ask you about which explanation method have affected your trust and understanding the most.</h6>
+        <h5>The following two questions ask you about which explanation method have affected your trust and understanding the most.</h5>
         <hr>
         <fieldset>
             <!-- Multiple Radios -->

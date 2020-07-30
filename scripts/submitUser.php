@@ -4,7 +4,10 @@ $servername = "localhost";
 $username = "root";
 $password = "Hulk22Lion908";
 $done = false;
+
 $type = $_POST["userType"];
+$age = $_POST["userAge"];
+$gender = $_POST["userGender"];
 $iT= $niT ="";
 $seshID = session_id();
 if($type == 1) {
@@ -21,11 +24,14 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     //gather needed DB data
     //echo "connected <br>";
-    $SQL = $conn->prepare("INSERT INTO user (session_ID, is_tech, is_non_tech)
-                                    VALUES (:session_ID, :is_tech, :is_non_tech)");
+    $SQL = $conn->prepare("INSERT INTO user (session_ID, is_tech, is_non_tech, age, gender)
+                                    VALUES (:session_ID, :is_tech, :is_non_tech, :age, :gender)");
     $SQL->bindParam(':session_ID',$seshID);
     $SQL->bindParam(':is_tech',$it);
     $SQL->bindParam(':is_non_tech',$niT);
+    $SQL->bindParam(':age',$age);
+    $SQL->bindParam(':gender',$gender);
+    $SQL->debugDumpParams();
     $SQL->execute();
     $done = true;
 } catch(PDOException $e) {

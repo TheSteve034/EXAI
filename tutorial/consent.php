@@ -62,8 +62,13 @@ session_start();
     </ol>
     <h6>RISKS OF TAKING PART IN THE STUDY:</h6>
 
-    <p>There are no risks to you in participating in this study other than those that are common to general computer use.</p>
-
+    <p>There are no risks to you in participating in this study other than those that are common to general computer use.
+        Some of these risks are listed below.</p>
+        <ul>
+            <li>Eye Strain</li>
+            <li>Headaches</li>
+            <li>Musculoskeletal strain</li>
+        </ul>
 
     <h6>BENEFITS OF TAKING PART IN THE STUDY</h6>
 
@@ -120,6 +125,10 @@ session_start();
     <p>Taking part in this study is voluntary.  You may choose not to take part or may leave the study at any time.  Leaving
     the study will not result in any penalty or loss of benefits to which you are entitled.  Your decision whether or not
         to participate in this study will not affect your current or future relations with Weber State University.</p>
+
+    <p>You may choose to stop participating in the experiment at any point during your session. However, you must
+        complete the experiment to receive the compensation outlined above.
+    </p>
 
     <h6>SUBJECT’S CONSENT</h6>
 
