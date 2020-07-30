@@ -18,6 +18,11 @@ $_SESSION["NextR"] = "Location: final_survey.php";
 <body onload="startTime()" class="p-3 mb-2 bg-light text-black">
 <section id="EX_recipe">
     <section id="tutorial_recipe_content" style="width: 75%">
+        <?php
+        $rCount = 25-$_SESSION["rcount"];
+        $display = "<h6>Last Recipe</h6>";
+        echo $display;
+        ?>
         <div class="card" style="width: auto;">
             <img src="../Images/food_images/r25foodimage.jpg" class="card-img-top" alt="...">
             <div class="card-body">

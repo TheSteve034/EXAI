@@ -18,6 +18,11 @@ $_SESSION["NextR"] = "Location: recommendations/sessionEX_18.php";
 <body onload="startTime()" class="p-3 mb-2 bg-light text-black">
 <section id="EX_recipe">
     <section id="tutorial_recipe_content" style="width: 75%">
+        <?php
+        $rCount = 25-$_SESSION["rcount"];
+        $display = "<h6>".$rCount." recipes left to view.</h6>";
+        echo $display;
+        ?>
         <div class="card" style="width: auto;">
             <img src="../Images/food_images/r17foodimage.jpg" class="card-img-top" alt="...">
             <div class="card-body">
